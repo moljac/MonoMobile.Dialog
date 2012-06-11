@@ -1,0 +1,10 @@
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\XSample.MonoTouch\obj\iPhoneSimulator\Debug\ResolveAssemblyReference.cache
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\XSample.MonoTouch\bin\iPhoneSimulator\Debug\XSampleMonoTouch.exe
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\XSample.MonoTouch\bin\iPhoneSimulator\Debug\XSampleMonoTouch.pdb
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\XSample.MonoTouch\bin\iPhoneSimulator\Debug\MonoTouch.Dialog.dll
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\XSample.MonoTouch\bin\iPhoneSimulator\Debug\monotouch.dll
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\XSample.MonoTouch\bin\iPhoneSimulator\Debug\System.Json.dll
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\XSample.MonoTouch\bin\iPhoneSimulator\Debug\MonoTouch.Dialog.pdb
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\XSample.MonoTouch\bin\iPhoneSimulator\Debug\System.Json.pdb
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\XSample.MonoTouch\obj\iPhoneSimulator\Debug\XSampleMonoTouch.exe
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\XSample.MonoTouch\obj\iPhoneSimulator\Debug\XSampleMonoTouch.pdb

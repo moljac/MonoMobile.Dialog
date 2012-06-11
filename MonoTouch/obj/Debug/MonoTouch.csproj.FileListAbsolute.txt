@@ -1,0 +1,5 @@
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoTouch\bin\Debug\MonoTouch.dll
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoTouch\bin\Debug\MonoTouch.pdb
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoTouch\obj\Debug\ResolveAssemblyReference.cache
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoTouch\obj\Debug\MonoTouch.dll
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoTouch\obj\Debug\MonoTouch.pdb

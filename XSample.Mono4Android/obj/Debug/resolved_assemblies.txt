@@ -1,0 +1,2 @@
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\XSample.Mono4Android\bin\Debug\DialogSampleApp.dll
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\XSample.Mono4Android\bin\Debug\MonoDroid.Dialog.dll

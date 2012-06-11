@@ -1,0 +1,9 @@
+/Volumes/SRC/libraries-holisticware/MonoMobile.Dialog/MonoMobile.Dialog.Android/bin/Release/MonoDroid.Dialog.dll.mdb
+/Volumes/SRC/libraries-holisticware/MonoMobile.Dialog/MonoMobile.Dialog.Android/bin/Release/MonoDroid.Dialog.dll
+/Volumes/SRC/libraries-holisticware/MonoMobile.Dialog/MonoMobile.Dialog.Android/bin/Release/MonoDroid.Dialog.apk
+/Volumes/SRC/libraries-holisticware/MonoMobile.Dialog/MonoMobile.Dialog.Android/obj/Release/android/bin/MonoDroid.Dialog.apk
+/Volumes/SRC/libraries-holisticware/MonoMobile.Dialog/MonoMobile.Dialog.Android/obj/Release/R.cs.flag
+/Volumes/SRC/libraries-holisticware/MonoMobile.Dialog/MonoMobile.Dialog.Android/bin/Release/MonoDroid.Dialog-Signed.apk
+/Volumes/SRC/libraries-holisticware/MonoMobile.Dialog/MonoMobile.Dialog.Android/obj/Release/uploadflags.txt
+/Volumes/SRC/libraries-holisticware/MonoMobile.Dialog/MonoMobile.Dialog.Android/obj/Release/MonoDroid.Dialog.dll
+/Volumes/SRC/libraries-holisticware/MonoMobile.Dialog/MonoMobile.Dialog.Android/obj/Release/MonoDroid.Dialog.dll.mdb

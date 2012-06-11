@@ -1,0 +1,11 @@
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Android\bin\Debug\MonoDroid.Dialog.dll
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Android\bin\Debug\MonoDroid.Dialog.pdb
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Android\bin\Debug\MonoDroid.Dialog.dll.mdb
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Android\bin\Debug\MonoDroid.Dialog.apk
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Android\bin\Debug\MonoDroid.Dialog-Signed.apk
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Android\obj\Debug\ResolveAssemblyReference.cache
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Android\obj\Debug\MonoDroid.Dialog.dll
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Android\obj\Debug\MonoDroid.Dialog.pdb
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Android\obj\Debug\android\bin\MonoDroid.Dialog.apk
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Android\obj\Debug\R.cs.flag
+D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Android\obj\Debug\uploadflags.txt
