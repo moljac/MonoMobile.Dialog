@@ -28,7 +28,10 @@ namespace DialogSampleApp
 		{
 			base.OnCreate(bundle);
 
-			RootElement root = DialogSampleApp.UserInterface.UIDefine();
+			RootElement root = 
+				//DialogSampleApp.UserInterface.UIDefine()
+				DialogSampleApp.UserInterface.UICities()
+				;
 
 			var da = new DialogAdapter(this, root);
 

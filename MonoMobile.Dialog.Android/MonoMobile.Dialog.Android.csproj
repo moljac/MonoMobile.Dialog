@@ -49,6 +49,7 @@
     <Compile Include="BooleanElement.cs" />
     <Compile Include="ButtonElement.cs" />
     <Compile Include="CheckboxElement.cs" />
+    <Compile Include="Element.Delta.cs" />
     <Compile Include="EntryElement.Delta.cs" />
     <Compile Include="DateTimeElement.cs" />
     <Compile Include="DialogActivity.cs" />

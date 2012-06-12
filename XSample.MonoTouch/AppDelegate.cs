@@ -19,6 +19,7 @@ namespace XSample.MonoTouch
 		// class-level declarations
 		UIWindow window;
 		UINavigationController navigation;
+		UIBarButtonItem buttonAdd;
 		
 		//
 		// This method is invoked when the application has loaded and is ready to run. In this 
@@ -29,24 +30,41 @@ namespace XSample.MonoTouch
 		//
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
-			RootElement re = 
-				// sample from  MA.D
-				DialogSampleApp.UserInterface.UIDefine()
-				// sample from  MT.D
-				//DialogSampleApp.UserInterface.UI()
-				;
-
 			UINavigationController navigation;
-			navigation = new UINavigationController();
+			navigation = new UINavigationController ();
+
+			RootElement re = DialogSampleApp.UserInterface.UICities();
+
 
 			//
 			// Create our UI and add it to the current toplevel navigation controller
 			// this will allow us to have nice navigation animations.
 			//
-			DialogViewController dv = new DialogViewController(re)
+			DialogViewController dv = new DialogViewController (re)
 			{
 				Autorotate = true
 			};
+
+			int n = 0;
+			buttonAdd = new UIBarButtonItem (UIBarButtonSystemItem.Add);
+			buttonAdd.Clicked += delegate(object sender, EventArgs e) {
+			   
+				++n;
+			   
+				City c = new City{Name = "city " + n};
+			   
+				RootElement cityElement = new RootElement (c.Name){
+			  new Section () {
+					  new EntryElement (c.Name,
+							 "Enter task description", c.Name)
+			  },
+			  new Section () {
+					  new DateElement ("Due Date", DateTime.Now)
+			  }
+			};
+				//re[0].Add (cityElement);	
+			};
+			dv.NavigationItem.RightBarButtonItem = buttonAdd;
 
 			navigation.PushViewController(dv, true);
 

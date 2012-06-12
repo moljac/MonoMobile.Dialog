@@ -1,6 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="AdHoc" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XSample.Mono4Android/UserInterface.cs">
+    <Files>
+      <File FileName="XSample.MonoTouch/Main.cs" Line="1" Column="1" />
+      <File FileName="XSample.MonoTouch/City.cs" Line="11" Column="7" />
+      <File FileName="XSample.MonoTouch/AppDelegate.cs" Line="36" Column="52" />
+      <File FileName="MonoMobile.Dialog.Touch/Elements.cs" Line="1949" Column="4" />
+      <File FileName="XSample.Mono4Android/UserInterface.cs" Line="54" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

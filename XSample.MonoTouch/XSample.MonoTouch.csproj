@@ -93,6 +93,7 @@
     <Compile Include="FlipsideViewController.designer.cs">
       <DependentUpon>FlipsideViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="City.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="FlipsideViewController.xib" />

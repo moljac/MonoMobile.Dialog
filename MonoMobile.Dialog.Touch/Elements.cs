@@ -1964,7 +1964,21 @@ namespace MonoMobile.Dialog
 	/// properties, or as UIViews to be shown (HeaderView and FooterView).   Internally
 	/// this uses the same storage, so you can only show one or the other.
 	/// </remarks>
-	public class Section : Element, IEnumerable {
+	public class Section : Element, IEnumerable
+		// mc++ added
+		, IEnumerable<Element>
+	{
+
+		# region    mc++
+		//-------------------------------------------------------------------------
+		IEnumerator<Element> IEnumerable<Element>.GetEnumerator()
+		{
+			foreach (var e in Elements)
+				yield return e;
+		}
+		//-------------------------------------------------------------------------
+		# endregion mc++
+	
 		object header, footer;
 		public List<Element> Elements = new List<Element> ();
 				

@@ -10,6 +10,63 @@ namespace DialogSampleApp
 {
 	public partial class UserInterface
 	{
+		public static RootElement UICities ()
+		{
+			RootElement re =
+				// sample from  MA.D
+				//DialogSampleApp.UserInterface.UIDefine()
+				// sample from  MT.D
+				//DialogSampleApp.UserInterface.UI()
+				new RootElement ("Cities")
+				{ 
+					 new Section ("Zagreb section") 
+					 {
+						new EntryElement ("Zagreb","City", "Zagreb")
+					  , new DateElement ("Date", DateTime.Now)
+					  , new StringElement ("String", "Value", DoSomething)
+					  , new TimeElement("Time", DateTime.Now)
+					  // TODO: mc++
+					  // MT.D ambigious in VS only!
+					  // Error	1	
+					  // The call is ambiguous between the following methods or properties: 
+					  // 'MonoMobile.Dialog.Section.Add(MonoMobile.Dialog.Element)' 
+					  // and 
+					  // 'MonoMobile.Dialog.Section.Add(IEnumerable<MonoMobile.Dialog.Element>)'
+					  // XSample.MonoTouch
+					  , new RootElement("Zagreb details")
+						{
+					 		new Section ("Zagreb section") 
+					 		{
+							  new EntryElement ("Zagreb","City", "Zagreb")
+					  		, new DateElement ("Date", DateTime.Now)
+					 		, new StringElement ("String", "Value")
+					  		, new TimeElement("Time", DateTime.Now)
+							, new RootElement("Zagreb details")
+								{
+									new Section ("Zagreb section") 
+					 				{
+									  new EntryElement ("Zagreb","City", "Zagreb")
+					  				, new DateElement ("Date", DateTime.Now)
+					 				, new StringElement ("String", "Value")
+					  				, new TimeElement("Time", DateTime.Now)
+									}
+								}
+							} 
+						}
+					 }
+				};
+			return re;
+		}
+
+
+		static Section region;
+
+		public static void DoSomething()
+		{
+			region.Add(new StringElement("Insertion not animated"));
+		}
+
+
 		public static RootElement UIDefine()
 		{
 			RootElement root = new RootElement("Test Root Elem")
@@ -95,7 +152,6 @@ namespace DialogSampleApp
 
 			return menu;
 		}
-	
-	
+
 	}
 }
