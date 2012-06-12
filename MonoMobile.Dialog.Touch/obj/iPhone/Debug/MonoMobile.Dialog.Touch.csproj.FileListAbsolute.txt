@@ -1,8 +1,0 @@
-D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Touch\bin\iPhone\Debug\MonoTouch.Dialog.dll
-D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Touch\bin\iPhone\Debug\MonoTouch.Dialog.pdb
-D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Touch\bin\iPhone\Debug\monotouch.dll
-D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Touch\obj\iPhone\Debug\ResolveAssemblyReference.cache
-D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Touch\obj\iPhone\Debug\MonoTouch.Dialog.dll
-D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Touch\obj\iPhone\Debug\MonoTouch.Dialog.pdb
-D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Touch\bin\iPhone\Debug\System.Json.dll
-D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Touch\bin\iPhone\Debug\System.Json.pdb

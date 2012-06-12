@@ -1,1 +1,0 @@
-D:\SRC\smartphone-samples\MonoMobile.Dialog\MonoTouch.Dialog\obj\iPhone\Debug\ResolveAssemblyReference.cache
