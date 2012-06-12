@@ -1,7 +1,7 @@
 MonoMobile.Dialog
 =================
 
-MonoTouch.Dialog and MonoDroid.Dialog merged
+Merge of MonoTouch.Dialog and MonoDroid.Dialog
 
 This is merge of 
  * MonoTouch.Dialog https://github.com/migueldeicaza/MonoTouch.Dialog
