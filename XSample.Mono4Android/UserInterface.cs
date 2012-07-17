@@ -18,22 +18,24 @@ namespace DialogSampleApp
 				// sample from  MT.D
 				//DialogSampleApp.UserInterface.UI()
 				new RootElement ("Cities")
-				{ 
-					 new Section ("Zagreb section") 
-					 {
-						new EntryElement ("Zagreb","City", "Zagreb")
-					  , new DateElement ("Date", DateTime.Now)
-					  , new StringElement ("String", "Value", DoSomething)
-					  , new TimeElement("Time", DateTime.Now)
-					  // TODO: mc++
-					  // MT.D ambigious in VS only!
-					  // Error	1	
-					  // The call is ambiguous between the following methods or properties: 
-					  // 'MonoMobile.Dialog.Section.Add(MonoMobile.Dialog.Element)' 
-					  // and 
-					  // 'MonoMobile.Dialog.Section.Add(IEnumerable<MonoMobile.Dialog.Element>)'
-					  // XSample.MonoTouch
-					  , new RootElement("Zagreb details")
+				{
+				  //new AdElement()
+				  new Section ("Zagreb section") 
+					{
+					  //new AdElement()
+					 new EntryElement ("Zagreb","City", "Zagreb")
+					, new DateElement ("Date", DateTime.Now)
+					, new StringElement ("String", "Value", DoSomething)
+					, new TimeElement("Time", DateTime.Now)
+					// TODO: mc++
+					// MT.D ambigious in VS only!
+					// Error	1	
+					// The call is ambiguous between the following methods or properties: 
+					// 'MonoMobile.Dialog.Section.Add(MonoMobile.Dialog.Element)' 
+					// and 
+					// 'MonoMobile.Dialog.Section.Add(IEnumerable<MonoMobile.Dialog.Element>)'
+					// XSample.MonoTouch
+					, new RootElement("Zagreb details")
 						{
 					 		new Section ("Zagreb section") 
 					 		{

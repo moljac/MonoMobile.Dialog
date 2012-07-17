@@ -84,6 +84,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
+    <Compile Include="..\MonoMobile.Dialog.Android\HolisticWare\AdElement.cs">
+      <Link>HolisticWare\AdElement.cs</Link>
+    </Compile>
+    <Compile Include="HolisticWare\AdElement.iAd.MT.cs" />
     <Compile Include="StringElement.Delta.cs" />
     <Compile Include="Elements.cs" />
     <Compile Include="DialogViewController.cs" />
@@ -112,5 +116,74 @@
       <Project>{E27B4024-ED8E-41A8-888F-E721DA2F0CE3}</Project>
       <Name>System.JSON.DLL_03_MT</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="docs\Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="docs\MonoTouch.Dialog.Utilities\IImageUpdated.xml" />
+    <Content Include="docs\MonoTouch.Dialog.Utilities\ImageLoader.xml" />
+    <Content Include="docs\MonoTouch.Dialog.Utilities\LRUCache`2.xml" />
+    <Content Include="docs\MonoTouch.Dialog\ActivityElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\AlignmentAttribute.xml" />
+    <Content Include="docs\MonoTouch.Dialog\BadgeElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\BaseBooleanImageElement+TextWithImageCellView.xml" />
+    <Content Include="docs\MonoTouch.Dialog\BaseBooleanImageElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\BindingContext.xml" />
+    <Content Include="docs\MonoTouch.Dialog\BooleanElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\BooleanImageElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\BoolElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\CaptionAttribute.xml" />
+    <Content Include="docs\MonoTouch.Dialog\CheckboxAttribute.xml" />
+    <Content Include="docs\MonoTouch.Dialog\CheckboxElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\DateAttribute.xml" />
+    <Content Include="docs\MonoTouch.Dialog\DateElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\DateTimeElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\DialogViewController+SearchTextEventHandler.xml" />
+    <Content Include="docs\MonoTouch.Dialog\DialogViewController+SizingSource.xml" />
+    <Content Include="docs\MonoTouch.Dialog\DialogViewController+Source.xml" />
+    <Content Include="docs\MonoTouch.Dialog\DialogViewController.xml" />
+    <Content Include="docs\MonoTouch.Dialog\Element.xml" />
+    <Content Include="docs\MonoTouch.Dialog\EntryAttribute.xml" />
+    <Content Include="docs\MonoTouch.Dialog\EntryElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\FloatElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\GlassButton.xml" />
+    <Content Include="docs\MonoTouch.Dialog\GraphicsUtil.xml" />
+    <Content Include="docs\MonoTouch.Dialog\Group.xml" />
+    <Content Include="docs\MonoTouch.Dialog\HtmlAttribute.xml" />
+    <Content Include="docs\MonoTouch.Dialog\HtmlElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\IColorizeBackground.xml" />
+    <Content Include="docs\MonoTouch.Dialog\IElementSizing.xml" />
+    <Content Include="docs\MonoTouch.Dialog\ImageElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\ImageStringElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\JsonElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\LoadMoreElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\MessageElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\MessageSummaryView.xml" />
+    <Content Include="docs\MonoTouch.Dialog\MultilineAttribute.xml" />
+    <Content Include="docs\MonoTouch.Dialog\MultilineElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\OnTapAttribute.xml" />
+    <Content Include="docs\MonoTouch.Dialog\OwnerDrawnElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\PasswordAttribute.xml" />
+    <Content Include="docs\MonoTouch.Dialog\RadioElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\RadioGroup.xml" />
+    <Content Include="docs\MonoTouch.Dialog\RadioSelectionAttribute.xml" />
+    <Content Include="docs\MonoTouch.Dialog\RangeAttribute.xml" />
+    <Content Include="docs\MonoTouch.Dialog\RefreshTableHeaderView.xml" />
+    <Content Include="docs\MonoTouch.Dialog\RefreshViewStatus.xml" />
+    <Content Include="docs\MonoTouch.Dialog\RootElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\SearchChangedEventArgs.xml" />
+    <Content Include="docs\MonoTouch.Dialog\Section.xml" />
+    <Content Include="docs\MonoTouch.Dialog\SectionAttribute.xml" />
+    <Content Include="docs\MonoTouch.Dialog\SkipAttribute.xml" />
+    <Content Include="docs\MonoTouch.Dialog\StringElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\StyledMultilineElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\StyledStringElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\TimeAttribute.xml" />
+    <Content Include="docs\MonoTouch.Dialog\TimeElement.xml" />
+    <Content Include="docs\MonoTouch.Dialog\UIViewElement+CellFlags.xml" />
+    <Content Include="docs\MonoTouch.Dialog\UIViewElement.xml" />
+    <Content Include="docs\ns-MonoTouch.Dialog.Utilities.xml" />
+    <Content Include="docs\ns-MonoTouch.Dialog.xml" />
   </ItemGroup>
 </Project>
