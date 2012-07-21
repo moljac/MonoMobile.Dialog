@@ -68,7 +68,7 @@ namespace Sample
 			};		
 		}
 		
-		RootElement CreateSoundSection ()
+		RootElement CreateSoundTestsMeasurements ()
 		{
 			return new RootElement ("Sounds"){
 				new Section ("Silent") {
@@ -103,7 +103,7 @@ namespace Sample
 			};
 		}
 		
-		public RootElement CreateGeneralSection ()
+		public RootElement CreateSectionTraining ()
 		{
 			return new RootElement ("General") {
 				new Section (){

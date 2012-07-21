@@ -12,6 +12,19 @@ namespace DialogSampleApp
 	{
 		public static RootElement UICities ()
 		{
+			RootElement re3 =
+				new RootElement("Zagreb details details details re3")
+								{
+									new Section ("Zagreb section") 
+					 				{
+									  new EntryElement ("Zagreb","City", "Zagreb")
+					  				, new DateElement ("Date", DateTime.Now)
+					 				, new StringElement ("String", "Value")
+					  				, new TimeElement("Time", DateTime.Now)
+									}
+								};
+
+			
 			RootElement re =
 				// sample from  MA.D
 				//DialogSampleApp.UserInterface.UIDefine()
@@ -25,7 +38,7 @@ namespace DialogSampleApp
 					  //new AdElement()
 					 new EntryElement ("Zagreb","City", "Zagreb")
 					, new DateElement ("Date", DateTime.Now)
-					, new StringElement ("String", "Value", DoSomething)
+					, new StringElement ("String", DoSomething)
 					, new TimeElement("Time", DateTime.Now)
 					// TODO: mc++
 					// MT.D ambigious in VS only!
@@ -35,7 +48,7 @@ namespace DialogSampleApp
 					// and 
 					// 'MonoMobile.Dialog.Section.Add(IEnumerable<MonoMobile.Dialog.Element>)'
 					// XSample.MonoTouch
-					, new RootElement("Zagreb details")
+					, new RootElement("Zagreb details re1")
 						{
 					 		new Section ("Zagreb section") 
 					 		{
@@ -43,7 +56,7 @@ namespace DialogSampleApp
 					  		, new DateElement ("Date", DateTime.Now)
 					 		, new StringElement ("String", "Value")
 					  		, new TimeElement("Time", DateTime.Now)
-							, new RootElement("Zagreb details")
+							, new RootElement("Zagreb details details re2")
 								{
 									new Section ("Zagreb section") 
 					 				{
@@ -61,10 +74,11 @@ namespace DialogSampleApp
 		}
 
 
-		static Section region;
 
 		public static void DoSomething()
 		{
+			Section region;
+			region =  new Section("New region/Section added in DoSomething)", "Footer");
 			region.Add(new StringElement("Insertion not animated"));
 		}
 
@@ -75,7 +89,7 @@ namespace DialogSampleApp
 				{
 					new Section("Test Header", "Test Footer")
 						{
-							new StringElement("Do Something", "Foo"
+							new StringElement("Do Something"
 								, () => {
 									Console.WriteLine("Did Something");
 									}

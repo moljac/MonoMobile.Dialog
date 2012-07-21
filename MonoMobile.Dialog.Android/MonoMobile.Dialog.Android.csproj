@@ -9,12 +9,13 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MonoDroid.Dialog</RootNamespace>
-    <AssemblyName>MonoDroid.Dialog</AssemblyName>
+    <RootNamespace>MonoMobile.Dialog</RootNamespace>
+    <AssemblyName>MonoMobile.Dialog.Android</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidSupportedAbis>armeabi</AndroidSupportedAbis>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
+    <TargetFrameworkVersion>v1.6</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AchievementElement.cs" />
+    <Compile Include="ActivityMonoMobileDialog.cs" />
+    <Compile Include="RootElement.TappedClicked.cs" />
+    <Compile Include="StringElement.ClickedTapped.cs" />
+    <Compile Include="DialogViewController.M4A.cs" />
+    <Compile Include="DialogInstanceData.cs" />
+    <Compile Include="RootElement.DialogActivity.cs" />
     <Compile Include="HolisticWare\AdElement.cs" />
     <Compile Include="HolisticWare\AdElement.iAd.MA.cs" />
     <Compile Include="BindingContext.cs" />
@@ -70,6 +78,7 @@
     <Compile Include="RadioElement.cs" />
     <Compile Include="Reflect.cs" />
     <Compile Include="RootElement.cs" />
+    <Compile Include="DialogViewController.cs" />
     <Compile Include="Section.cs" />
     <Compile Include="SectionAdapter.cs" />
     <Compile Include="StringElement.cs" />

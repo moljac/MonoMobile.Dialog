@@ -8,8 +8,8 @@
     <ProjectGuid>{CDFDE85F-F99B-44FD-A9F8-19224D517F3F}</ProjectGuid>
     <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>MonoTouch.Dialog</RootNamespace>
-    <AssemblyName>MonoTouch.Dialog</AssemblyName>
+    <RootNamespace>MonoMobile.Dialog</RootNamespace>
+    <AssemblyName>MonoMobile.Dialog.Touch</AssemblyName>
     <MtouchSdkVersion>3.0</MtouchSdkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
@@ -87,9 +87,37 @@
     <Compile Include="..\MonoMobile.Dialog.Android\HolisticWare\AdElement.cs">
       <Link>HolisticWare\AdElement.cs</Link>
     </Compile>
+    <Compile Include="ElementsSeparated\ClassTemplate.cs" />
+    <Compile Include="ElementsSeparated\CheckBoxElement.cs" />
+    <Compile Include="ElementsSeparated\BooleanImageElement.cs" />
+    <Compile Include="ElementsSeparated\BaseBooleanImageElement.cs" />
+    <Compile Include="ElementsSeparated\BooleanElement.cs" />
+    <Compile Include="ElementsSeparated\BoolElement.cs" />
+    <Compile Include="ElementsSeparated\RootElement.TappedClicked.cs" />
+    <Compile Include="ElementsSeparated\Element.cs" />
+    <Compile Include="ElementsSeparated\FloatElement.cs" />
+    <Compile Include="ElementsSeparated\HtmlElement.cs" />
+    <Compile Include="ElementsSeparated\StringElement.cs" />
+    <Compile Include="ElementsSeparated\StyledStringElement.cs" />
+    <Compile Include="ElementsSeparated\StyledMultilineElement.cs" />
+    <Compile Include="ElementsSeparated\ImageStringElement.cs" />
+    <Compile Include="ElementsSeparated\IElementSizing.cs" />
+    <Compile Include="ElementsSeparated\IColorizedBackground.cs" />
+    <Compile Include="ElementsSeparated\MultiLineElement.cs" />
+    <Compile Include="ElementsSeparated\RadioElement.cs" />
+    <Compile Include="ElementsSeparated\EntryElement.cs" />
+    <Compile Include="ElementsSeparated\ImageElement.cs" />
+    <Compile Include="ElementsSeparated\DateTimeElement.cs" />
+    <Compile Include="ElementsSeparated\TimeElement.cs" />
+    <Compile Include="ElementsSeparated\DateElement.cs" />
+    <Compile Include="ElementsSeparated\UIViewElement.cs" />
+    <Compile Include="ElementsSeparated\Section.cs" />
+    <Compile Include="ElementsSeparated\Group.cs" />
+    <Compile Include="ElementsSeparated\RadioGroup.cs" />
+    <Compile Include="ElementsSeparated\RootElement.cs" />
+    <Compile Include="ElementsSeparated\Elements.TempCopy.cs" />
     <Compile Include="HolisticWare\AdElement.iAd.MT.cs" />
-    <Compile Include="StringElement.Delta.cs" />
-    <Compile Include="Elements.cs" />
+    <None Include="Elements.cs" />
     <Compile Include="DialogViewController.cs" />
     <Compile Include="EntryElement.Delta.cs" />
     <Compile Include="Reflect.cs" />

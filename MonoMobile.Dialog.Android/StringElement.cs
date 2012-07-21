@@ -12,7 +12,7 @@ using Android.Runtime;
 
 namespace MonoMobile.Dialog
 {
-	public class StringElement : Element
+	public partial class StringElement : Element
 	{
 		public int FontSize {get;set;}
 		public string Value
@@ -40,7 +40,8 @@ namespace MonoMobile.Dialog
 			Value = value;
 		}
 		
-		
+		//mc++: Warning for compatibility!
+		[Obsolete("Compatibility warning: Not available in MonoTouch.Dialog", true)]
 		public StringElement(string caption, string value, Action clicked)
 			: base(caption, (int)DroidResources.ElementLayout.dialog_labelfieldright)
 		{

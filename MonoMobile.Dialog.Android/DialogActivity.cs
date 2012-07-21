@@ -6,16 +6,6 @@ using Android.Widget;
 
 namespace MonoMobile.Dialog
 {
-	public class DialogInstanceData : Java.Lang.Object
-	{
-		public DialogInstanceData()
-		{
-			_dialogState = new Dictionary<string, string>();
-		}
-
-		private Dictionary<String, String> _dialogState;
-	}
-
 	public class DialogActivity : ListActivity
 	{
 		public RootElement Root { get; set; }

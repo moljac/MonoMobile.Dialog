@@ -100,7 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MonoMobile.Dialog.Touch\MonoMobile.Dialog.Touch.csproj">
-      <Project>{3FFBFFF8-5560-4EDE-82E5-3FFDFBBA8A50}</Project>
+      <Project>{CDFDE85F-F99B-44FD-A9F8-19224D517F3F}</Project>
       <Name>MonoMobile.Dialog.Touch</Name>
     </ProjectReference>
   </ItemGroup>

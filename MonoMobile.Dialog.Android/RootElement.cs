@@ -8,7 +8,7 @@ using Android.Widget;
 
 namespace MonoMobile.Dialog
 {
-	public class RootElement : Element, IEnumerable<Section>, IDialogInterfaceOnClickListener
+	public partial class RootElement : Element, IEnumerable<Section>, IDialogInterfaceOnClickListener
 	{
 		TextView _caption;
 		TextView _value;
