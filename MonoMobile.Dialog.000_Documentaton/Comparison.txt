@@ -1,0 +1,93 @@
+﻿MonoTouch.Dialog
+	Miguel
+		Main.cs			
+			Application.Main()
+			UIApplication.Main(args, null, "AppDelegate");
+
+			AppDelegate.FinishedLaunching()
+				RootElement re = new RootElement();
+				DialogViewController dvc = new DialogViewController (re) 
+												{
+													Autorotate = true
+												};
+				navigation = new UINavigationController ();
+				navigation.PushViewController (dvc, true);				
+			
+				window = new UIWindow (UIScreen.MainScreen.Bounds);
+				window.MakeKeyAndVisible ();
+
+				// On iOS5 use the new window.RootViewController, 
+				// on older versions, add the subview
+				if (UIDevice.CurrentDevice.CheckSystemVersion (5, 0))
+				{
+					window.RootViewController = navigation;	
+				}
+				else
+				{
+					window.AddSubview (navigation.View);
+				}
+
+
+MonoAndroid.Dialog
+	Kevin McMahon
+		Activity1.OnCreate(Bundle)
+			RootElement re = new RootElement();
+
+			// mc++: equivalent to MonoTouchDialog.DialogViewController
+			var da = new DialogAdapter(this, root);
+			// mc++: equivalent to MonoTouch UINavigationController
+			var lv = new ListView(this) {Adapter = da};
+
+			// mc++: equivalent to MonoTouch Window
+			// Activity.SetContentView ~ Window.RootViewController	iOS 5+
+			// Activity.SetContentView ~ Window.AddSubview			iOS other
+			SetContentView(lv);
+			
+
+	HolisticWare.PhActEx
+		Android.App.Application
+			cannot be used -  must be an activity!
+			
+
+
+MTD													MAD
+UIWindow				window;						Activity1
+UINavigationController	navigation;					DialogAdapter?
+													ListView?
+
+
+AppDelegeate.OnFinishedLaunching					Activity.OnCreate
+
+	RootElement re = new RootElement(""){};				RootElement re = new RootElement(""){};
+
+
+	navigation = new UINavigationController();
+
+	DialogViewController dvc;							DialogAdapter da;
+	dvc = new DialogViewController(re);					da =  new DialogAdapter(this,re);
+
+														ListView lv;
+														lv = new ListView(this)
+																		{
+																		Adapter = dialogadapter;
+																		};
+	navigation.PushViewControler(dvc,true);
+
+
+	if (UIDevice.CurrentDevice.CheckSystemVersion (5, 0))
+	{
+		window.RootViewController = navigation;	
+	}
+	else
+	{
+		window.AddSubview (navigation.View);
+	}
+
+														this.SetContentView(lv);
+
+	window.MakeKeyAndVisible();
+
+
+
+DialogViewControler										DialogAdapter
+	RootElement Root {get; set;}							RootElement Root {get; set;}

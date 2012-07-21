@@ -31,6 +31,8 @@ obj/
 _ReSharper*/
 [Tt]est[Rr]esult*
 TempPE/
+*.ncrunchproject
+*.ncrunchsolution
 =======
 # Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
 bin
