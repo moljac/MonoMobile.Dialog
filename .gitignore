@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+bin/
+debug/
+Bin/
+Debug/
 Thumbs.db
 *.obj
 *.exe
