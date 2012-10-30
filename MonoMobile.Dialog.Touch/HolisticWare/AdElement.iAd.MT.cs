@@ -34,10 +34,11 @@ namespace DialogSampleApp
 			DisableSelection = 2
 		}
 
-				public AdElement()
+		public AdElement()
 			: 
 			//base("AdBanner", null, false)  //UIViewElement
-			base("AdBanner") // Element
+			//base("AdBanner") // Element
+			base()
 		{
 			key = new NSString ("AdBanner" + count++);
 

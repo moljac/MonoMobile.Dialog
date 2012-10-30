@@ -1,4 +1,23 @@
-﻿MonoTouch.Dialog
+﻿WP Sl
+	http://msdn.microsoft.com/en-us/library/system.windows.controls(v=vs.95)
+	http://msdn.microsoft.com/en-us/library/windowsphone/develop/ff402549(v=vs.92).aspx
+
+	Microsoft.Phone.Controls
+
+	Toolkit
+		Microsoft.Phone.Controls.Toolkit
+
+
+When stable 
+	remove all comments marked with // mc++ commonized 
+
+
+
+http://www.yetanotherchris.me/home/2010/10/18/uitableviewcontroller-by-example.html
+
+
+
+MonoTouch.Dialog
 	Miguel
 		Main.cs			
 			Application.Main()
@@ -91,3 +110,45 @@ AppDelegeate.OnFinishedLaunching					Activity.OnCreate
 
 DialogViewControler										DialogAdapter
 	RootElement Root {get; set;}							RootElement Root {get; set;}
+
+
+
+Differences
+
+	MT.D
+
+		public 
+			override 
+			UITableViewCell 
+			GetCell
+			(
+			  UITableView tv
+			)
+
+
+	MA.D
+
+		public override 
+			View 
+			GetView 
+			(
+			  Context context
+			, View convertView
+			, ViewGroup parent
+			)
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://msdn.microsoft.com/en-us/library/system.windows.frameworkelement(v=vs.95).aspx

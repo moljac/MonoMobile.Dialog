@@ -13,38 +13,38 @@
     <MtouchSdkVersion>3.0</MtouchSdkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
-    <DebugSymbols>true</DebugSymbols>
+    <DebugSymbols>True</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>False</Optimize>
     <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
     <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <MtouchLink>None</MtouchLink>
-    <MtouchDebug>true</MtouchDebug>
+    <MtouchDebug>True</MtouchDebug>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>False</Optimize>
     <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <MtouchLink>None</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
-    <DebugSymbols>true</DebugSymbols>
+    <DebugSymbols>True</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>False</Optimize>
     <OutputPath>bin\iPhone\Debug</OutputPath>
     <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodesignKey>iPhone Developer</CodesignKey>
-    <MtouchDebug>true</MtouchDebug>
+    <MtouchDebug>True</MtouchDebug>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>False</Optimize>
     <OutputPath>bin\iPhone\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -52,27 +52,27 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AdHoc|iPhone' ">
     <DebugType>none</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>False</Optimize>
     <OutputPath>bin</OutputPath>
     <WarningLevel>4</WarningLevel>
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
     <DebugType>none</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>False</Optimize>
     <OutputPath>bin</OutputPath>
     <WarningLevel>4</WarningLevel>
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AdHoc|iPhoneSimulator' ">
     <DebugType>none</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>False</Optimize>
     <OutputPath>bin\AdHoc</OutputPath>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhoneSimulator' ">
     <DebugType>none</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>False</Optimize>
     <OutputPath>bin\AppStore</OutputPath>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -81,46 +81,115 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
+    <Reference Include="System.Json" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="..\MonoMobile.Dialog.Android\HolisticWare\AdElement.cs">
       <Link>HolisticWare\AdElement.cs</Link>
     </Compile>
-    <Compile Include="ElementsSeparated\ClassTemplate.cs" />
-    <Compile Include="ElementsSeparated\CheckBoxElement.cs" />
-    <Compile Include="ElementsSeparated\BooleanImageElement.cs" />
-    <Compile Include="ElementsSeparated\BaseBooleanImageElement.cs" />
-    <Compile Include="ElementsSeparated\BooleanElement.cs" />
-    <Compile Include="ElementsSeparated\BoolElement.cs" />
-    <Compile Include="ElementsSeparated\RootElement.TappedClicked.cs" />
-    <Compile Include="ElementsSeparated\Element.cs" />
-    <Compile Include="ElementsSeparated\FloatElement.cs" />
-    <Compile Include="ElementsSeparated\HtmlElement.cs" />
-    <Compile Include="ElementsSeparated\StringElement.cs" />
-    <Compile Include="ElementsSeparated\StyledStringElement.cs" />
-    <Compile Include="ElementsSeparated\StyledMultilineElement.cs" />
-    <Compile Include="ElementsSeparated\ImageStringElement.cs" />
-    <Compile Include="ElementsSeparated\IElementSizing.cs" />
-    <Compile Include="ElementsSeparated\IColorizedBackground.cs" />
-    <Compile Include="ElementsSeparated\MultiLineElement.cs" />
-    <Compile Include="ElementsSeparated\RadioElement.cs" />
-    <Compile Include="ElementsSeparated\EntryElement.cs" />
-    <Compile Include="ElementsSeparated\ImageElement.cs" />
-    <Compile Include="ElementsSeparated\DateTimeElement.cs" />
-    <Compile Include="ElementsSeparated\TimeElement.cs" />
-    <Compile Include="ElementsSeparated\DateElement.cs" />
-    <Compile Include="ElementsSeparated\UIViewElement.cs" />
-    <Compile Include="ElementsSeparated\Section.cs" />
-    <Compile Include="ElementsSeparated\Group.cs" />
-    <Compile Include="ElementsSeparated\RadioGroup.cs" />
-    <Compile Include="ElementsSeparated\RootElement.cs" />
-    <Compile Include="ElementsSeparated\Elements.TempCopy.cs" />
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\BooleanElement.cs">
+      <Link>BooleanElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\BoolElement.cs">
+      <Link>BoolElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\CheckboxElement.cs">
+      <Link>CheckboxElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\DateElement.cs">
+      <Link>DateElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\DateTimeElement.cs">
+      <Link>DateTimeElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\DialogNavigationControllerAdapter.cs">
+      <Link>DialogNavigationControllerAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\DialogViewController.cs">
+      <Link>DialogViewController.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\Element.cs">
+      <Link>Element.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\Element.Utilities.cs">
+      <Link>Element.Utilities.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\EntryElement.cs">
+      <Link>EntryElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\FloatElement.cs">
+      <Link>FloatElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\Group.cs">
+      <Link>Group.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\HolisticWare\NSUrl.cs">
+      <Link>HolisticWare\NSUrl.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\HtmlElement.cs">
+      <Link>HtmlElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\ImageElement.cs">
+      <Link>ImageElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\MultilineElement.cs">
+      <Link>MultilineElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\RadioElement.cs">
+      <Link>RadioElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\RadioGroup.cs">
+      <Link>RadioGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\RootElement.cs">
+      <Link>RootElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\Section.cs">
+      <Link>Section.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\StringElement.cs">
+      <Link>StringElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\TimeElement.cs">
+      <Link>TimeElement.cs</Link>
+    </Compile>
+    <Compile Include="ClassTemplate.MT.cs" />
+    <Compile Include="CheckBoxElement.MT.cs" />
+    <Compile Include="BooleanImageElement.MT.cs" />
+    <Compile Include="BaseBooleanImageElement.MT.cs" />
+    <Compile Include="BooleanElement.MT.cs" />
+    <Compile Include="BoolElement.MT.cs" />
+    <Compile Include="Element.ToString.MT.cs" />
+    <Compile Include="HtmlWebViewController.MT.cs" />
+    <Compile Include="IElementSizing.MT.cs" />
+    <Compile Include="RootElement.Constructors.MT.cs" />
+    <Compile Include="RootElement.TappedClicked.MT.cs" />
+    <Compile Include="Element.MT.cs" />
+    <Compile Include="FloatElement.MT.cs" />
+    <Compile Include="HtmlElement.MT.cs" />
+    <Compile Include="StringElement.MT.cs" />
+    <Compile Include="StyledStringElement.MT.cs" />
+    <Compile Include="StyledMultilineElement.MT.cs" />
+    <Compile Include="ImageStringElement.MT.cs" />
+    <Compile Include="IColorizedBackground.MT.cs" />
+    <Compile Include="MultiLineElement.MT.cs" />
+    <Compile Include="RadioElement.MT.cs" />
+    <Compile Include="EntryElement.MT.cs" />
+    <Compile Include="ImageElement.MT.cs" />
+    <Compile Include="DateTimeElement.MT.cs" />
+    <Compile Include="TimeElement.MT.cs" />
+    <Compile Include="DateElement.MT.cs" />
+    <Compile Include="UIViewElement.MT.cs" />
+    <Compile Include="Section.MT.cs" />
+    <Compile Include="Group.MT.cs" />
+    <Compile Include="RadioGroup.MT.cs" />
+    <Compile Include="RootElement.MT.cs" />
     <Compile Include="HolisticWare\AdElement.iAd.MT.cs" />
     <None Include="Elements.cs" />
-    <Compile Include="DialogViewController.cs" />
-    <Compile Include="EntryElement.Delta.cs" />
+    <Compile Include="DialogViewController.MT.cs" />
     <Compile Include="Reflect.cs" />
+    <Compile Include="HolisticWare\Screen.MT.cs" />
     <Compile Include="Utilities\Graphics.cs" />
     <Compile Include="OldElements\LoadMoreElement.cs" />
     <Compile Include="Utilities\ImageLoader.cs" />
@@ -131,19 +200,13 @@
     <Compile Include="Elements\ElementBadge.cs" />
     <Compile Include="Utilities\Controls.cs" />
     <Compile Include="Utilities\GlassButton.cs" />
-    <Compile Include="Utilities\LocalizationExtensions.cs" />
+    <Compile Include="Utilities\LocalizationExtensions.MT.cs" />
     <Compile Include="Elements\Json.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\arrow.png">
       <LogicalName>arrow.png</LogicalName>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\System.Json\System.JSON.DLL_03_MT\System.JSON.DLL_03_MT.csproj">
-      <Project>{E27B4024-ED8E-41A8-888F-E721DA2F0CE3}</Project>
-      <Name>System.JSON.DLL_03_MT</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="docs\Makefile" />
@@ -214,4 +277,9 @@
     <Content Include="docs\ns-MonoTouch.Dialog.Utilities.xml" />
     <Content Include="docs\ns-MonoTouch.Dialog.xml" />
   </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.wp.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="7e454455-83d1-4b65-bc72-ab1f3d79c02d" />
+    </VisualStudio>
+  </ProjectExtensions>
 </Project>

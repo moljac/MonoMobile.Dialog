@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7E454455-83D1-4B65-BC72-AB1F3D79C02D}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MonoMobile.Dialog.WindowsPhone</RootNamespace>
+    <AssemblyName>MonoMobile.Dialog.WindowsPhone</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Net" />
+    <Reference Include="mscorlib.extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BoolElement.cs" />
+    <Compile Include="A.Template of Element.WP.cs" />
+    <Compile Include="BooleanElement.WP.cs" />
+    <Compile Include="BooleanElement.cs" />
+    <Compile Include="CheckboxElement.WP.cs" />
+    <Compile Include="CheckboxElement.cs" />
+    <Compile Include="RadioElement.WP.cs" />
+    <Compile Include="Element.ToString.WP.cs" />
+    <Compile Include="DialogNavigationControllerAdapter.cs" />
+    <Compile Include="Element.Utilities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Element.WP.cs" />
+    <Compile Include="HolisticWare\NSUrl.cs" />
+    <Compile Include="Section.WP.cs" />
+    <Compile Include="DialogViewController.cs" />
+    <Compile Include="DialogViewController.WP.cs" />
+    <Compile Include="EntryElement.cs" />
+    <Compile Include="EntryElement.WP.cs" />
+    <Compile Include="FloatElement.cs" />
+    <Compile Include="FloatElement.WP.cs" />
+    <Compile Include="HtmlElement.cs" />
+    <Compile Include="HtmlElement.WP.cs" />
+    <Compile Include="ImageElement.cs" />
+    <Compile Include="ImageElement.WP.cs" />
+    <Compile Include="IElementSizing.WP.cs" />
+    <Compile Include="MultilineElement.WP.cs" />
+    <Compile Include="MultilineElement.cs" />
+    <Compile Include="RadioElement.cs" />
+    <Compile Include="RadioGroup.cs" />
+    <Compile Include="StringElement.WP.cs" />
+    <Compile Include="TimeElement.WP.cs" />
+    <Compile Include="DateTimeElement.WP.cs" />
+    <Compile Include="DateElement.WP.cs" />
+    <Compile Include="StringElement.cs" />
+    <Compile Include="DateElement.cs" />
+    <Compile Include="DateTimeElement.cs" />
+    <Compile Include="TimeElement.cs" />
+    <Compile Include="RootElement.WP.cs" />
+    <Compile Include="Group.cs" />
+    <Compile Include="Section.cs" />
+    <Compile Include="RootElement.cs" />
+    <Compile Include="Element.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\LocalizationExtensions.WP.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

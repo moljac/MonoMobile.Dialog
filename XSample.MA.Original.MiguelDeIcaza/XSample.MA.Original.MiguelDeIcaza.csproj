@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DCA70902-DAA0-49E4-AB18-D1098D3814C5}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sample</RootNamespace>
+    <AssemblyName>XSample.MA.Original.MiguelDeIcaza</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidSupportedAbis>armeabi%3bx86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\XSample.MT.Original.MiguelDeIcaza\DemoElementApi.HolisticWare.cs">
+      <Link>DemoElementApi.HolisticWare.cs</Link>
+    </Compile>
+    <Compile Include="Activity1.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StyledStringElement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\Main.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MonoMobile.Dialog.Android\MonoMobile.Dialog.Android.csproj">
+      <Project>{33044C7B-47A4-4113-A61A-EB429407F818}</Project>
+      <Name>MonoMobile.Dialog.Android</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_achievements.xml">
+      <Link>Resources\Layout\dialog_achievements.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_textfieldright.xml">
+      <Link>Resources\Layout\dialog_textfieldright.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_boolfieldleft.xml">
+      <Link>Resources\Layout\dialog_boolfieldleft.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_boolfieldright.xml">
+      <Link>Resources\Layout\dialog_boolfieldright.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_boolfieldsubleft.xml">
+      <Link>Resources\Layout\dialog_boolfieldsubleft.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_boolfieldsubright.xml">
+      <Link>Resources\Layout\dialog_boolfieldsubright.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_button.xml">
+      <Link>Resources\Layout\dialog_button.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_datefield.xml">
+      <Link>Resources\Layout\dialog_datefield.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_fieldsetlabel.xml">
+      <Link>Resources\Layout\dialog_fieldsetlabel.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_floatimage.xml">
+      <Link>Resources\Layout\dialog_floatimage.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_labelfieldbelow.xml">
+      <Link>Resources\Layout\dialog_labelfieldbelow.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_labelfieldright.xml">
+      <Link>Resources\Layout\dialog_labelfieldright.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_onofffieldright.xml">
+      <Link>Resources\Layout\dialog_onofffieldright.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_panel.xml">
+      <Link>Resources\Layout\dialog_panel.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_root.xml">
+      <Link>Resources\Layout\dialog_root.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_selectlist.xml">
+      <Link>Resources\Layout\dialog_selectlist.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_selectlistfield.xml">
+      <Link>Resources\Layout\dialog_selectlistfield.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_textarea.xml">
+      <Link>Resources\Layout\dialog_textarea.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Layout\dialog_textfieldbelow.xml">
+      <Link>Resources\Layout\dialog_textfieldbelow.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Drawable\dialog_disclosure.png">
+      <Link>Resources\Drawable\dialog_disclosure.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="..\MonoMobile.Dialog.Android\Resources\Drawable\dialog_expander_ic_minimized.9.png">
+      <Link>Resources\Drawable\dialog_expander_ic_minimized.9.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

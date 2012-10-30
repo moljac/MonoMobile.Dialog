@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="MonoMobile.Dialog.BindingContext" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="14" Width="1.5" />
+    <NestedTypes>
+      <Class Name="MonoMobile.Dialog.BindingContext.MemberAndInstance" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Reflect.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="MonoMobile.Dialog.BindingContext.MemberRadioGroup" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Reflect.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAIJCAAAiAAAAEAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reflect.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MonoMobile.Dialog.BooleanElement">
+    <Position X="4.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAACAAAAAAAAAAAAAAAAAAAEEAAAAgEAAAAAA=</HashCode>
+      <FileName>BooleanElement.MT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.BoolElement">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAIAAAAAAAAAAAAAAAAAAAEAAAAAQAAAgAAAAAAA=</HashCode>
+      <FileName>D:\SRC\libraries-holisticware\git[github.com]\MonoMobile.Dialog\MonoMobile.Dialog.WindowsPhone\BoolElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.CheckboxElement">
+    <Position X="19.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAI=</HashCode>
+      <FileName>CheckBoxElement.MT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.DateElement">
+    <Position X="24.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\SRC\libraries-holisticware\git[github.com]\MonoMobile.Dialog\MonoMobile.Dialog.WindowsPhone\DateElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.DateTimeElement">
+    <Position X="23" Y="3.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="MonoMobile.Dialog.DateTimeElement.MyViewController" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DateTimeElement.MT.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>wAAgAACAASAAACQAAAAAAAAAAAgCAAAAAAAAAIAAAAI=</HashCode>
+      <FileName>D:\SRC\libraries-holisticware\git[github.com]\MonoMobile.Dialog\MonoMobile.Dialog.WindowsPhone\DateTimeElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.DialogViewController">
+    <Position X="2.5" Y="14" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="MonoMobile.Dialog.DialogViewController.SearchTextEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DialogViewController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Class Name="MonoMobile.Dialog.DialogViewController.SearchDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DialogViewController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="MonoMobile.Dialog.DialogViewController.Source" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DialogViewController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="MonoMobile.Dialog.DialogViewController.SizingSource" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DialogViewController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BAgIIgAQAGFgAiKABAAsQQADAgGQAKAYhAKByAIAABI=</HashCode>
+      <FileName>DialogViewController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.Element">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QhCAAAAAQCAgAAAAEAAAQQAAAAAAAEAACAggAAAAAAI=</HashCode>
+      <FileName>D:\SRC\libraries-holisticware\git[github.com]\MonoMobile.Dialog\MonoMobile.Dialog.WindowsPhone\Element.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MonoMobile.Dialog.EntryElement">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SBKFIAgERGAAYCAEFEEgAAAAIEQFAURCACAgQhAAESI=</HashCode>
+      <FileName>D:\SRC\libraries-holisticware\git[github.com]\MonoMobile.Dialog\MonoMobile.Dialog.WindowsPhone\EntryElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.FloatElement">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAAAAAACABAAgAAAAAAAAAAEACAEACCAykAgQBAAA=</HashCode>
+      <FileName>D:\SRC\libraries-holisticware\git[github.com]\MonoMobile.Dialog\MonoMobile.Dialog.WindowsPhone\FloatElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.Group">
+    <Position X="18" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>D:\SRC\libraries-holisticware\git[github.com]\MonoMobile.Dialog\MonoMobile.Dialog.WindowsPhone\Group.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.Screen">
+    <Position X="0.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>HolisticWare\Screen.MT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.HtmlElement">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="MonoMobile.Dialog.HtmlElement.WebViewController" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>HtmlElement.MT.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAUAAAAAAAAAEAAAAAAAABIAEAACAAAAAACAAI=</HashCode>
+      <FileName>D:\SRC\libraries-holisticware\git[github.com]\MonoMobile.Dialog\MonoMobile.Dialog.WindowsPhone\HtmlElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.ImageElement">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="MonoMobile.Dialog.ImageElement.MyDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ImageElement.MT.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAAwBAAIACAAAAEAAAIAICACAAAAAGAAAAAgAAAAAAI=</HashCode>
+      <FileName>D:\SRC\libraries-holisticware\git[github.com]\MonoMobile.Dialog\MonoMobile.Dialog.WindowsPhone\ImageElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.MultilineElement">
+    <Position X="15.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\SRC\libraries-holisticware\git[github.com]\MonoMobile.Dialog\MonoMobile.Dialog.WindowsPhone\MultilineElement.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MonoMobile.Dialog.RadioElement">
+    <Position X="17.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>D:\SRC\libraries-holisticware\git[github.com]\MonoMobile.Dialog\MonoMobile.Dialog.WindowsPhone\RadioElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.RadioGroup">
+    <Position X="18" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\SRC\libraries-holisticware\git[github.com]\MonoMobile.Dialog\MonoMobile.Dialog.WindowsPhone\RadioGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.EntryAttribute">
+    <Position X="16" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAgABAAABCAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reflect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.DateAttribute">
+    <Position X="0.5" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reflect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.TimeAttribute">
+    <Position X="8" Y="19" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reflect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.CheckboxAttribute">
+    <Position X="8" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reflect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.MultilineAttribute">
+    <Position X="0.5" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reflect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.HtmlAttribute">
+    <Position X="6.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reflect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.SkipAttribute">
+    <Position X="6.25" Y="19" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reflect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.PasswordAttribute">
+    <Position X="16" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reflect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.AlignmentAttribute">
+    <Position X="0.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reflect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.RadioSelectionAttribute">
+    <Position X="6.25" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reflect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.OnTapAttribute">
+    <Position X="4.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reflect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.CaptionAttribute">
+    <Position X="6.25" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Reflect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.SectionAttribute">
+    <Position X="4.25" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Reflect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.RangeAttribute">
+    <Position X="8" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAgAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Reflect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.RootElement">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wEYACEIyACAAQARACQEABCQCAAAAAQAESEAAAABAAAY=</HashCode>
+      <FileName>RootElement.Constructors.MT.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MonoMobile.Dialog.Section">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAIQAEQAACUCABAAKAAQBAQAAAAQAAAAAAAAAIBAAAA=</HashCode>
+      <FileName>D:\SRC\libraries-holisticware\git[github.com]\MonoMobile.Dialog\MonoMobile.Dialog.WindowsPhone\Section.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MonoMobile.Dialog.StringElement">
+    <Position X="17.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBCAAAAAAAAQAAAAACAAAAAAAAQAAAAAAAggAAAAAAI=</HashCode>
+      <FileName>D:\SRC\libraries-holisticware\git[github.com]\MonoMobile.Dialog\MonoMobile.Dialog.WindowsPhone\StringElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.TimeElement">
+    <Position X="22" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\SRC\libraries-holisticware\git[github.com]\MonoMobile.Dialog\MonoMobile.Dialog.WindowsPhone\TimeElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.LocalizationExtensions">
+    <Position X="8" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\LocalizationExtensions.MT.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DialogSampleApp.AdElement">
+    <Position X="12" Y="8.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="DialogSampleApp.AdElement.CellFlags" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>HolisticWare\AdElement.iAd.MT.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>RAACBAAAACAAAAAABAAEAABAAgABAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>D:\SRC\libraries-holisticware\git[github.com]\MonoMobile.Dialog\MonoMobile.Dialog.Android\HolisticWare\AdElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MonoMobile.Dialog.IElementSizing">
+    <Position X="0.5" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IElementSizing.MT.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

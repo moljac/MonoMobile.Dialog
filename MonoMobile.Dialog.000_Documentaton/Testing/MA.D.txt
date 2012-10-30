@@ -1,0 +1,76 @@
+﻿TODO: fix all elements with LyoutID=0!!!!
+	EntryElement 
+	FloatElemnt
+
+Most likely cause:
+	During port and extracting common code - forgot te set LayoutID (code runs only through MT.D)
+
+10-29 12:40:53.350 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.RootElementlayoutId=11monomobile.dialog.RootElement@40527c48
+Element-Type=MonoMobile.Dialog.RootElementlayoutId=11monomobile.dialog.RootElement@40527c48
+Resolved pending breakpoint at 'D:\SRC\libraries-holisticware\git[github.com]\MonoMobile.Dialog\MonoMobile.Dialog.Android\Section.MA.cs:47' to Void MonoMobile.Dialog.Section:.ctor () [0x0000d].
+Element-Type=MonoMobile.Dialog.SectionlayoutId=12monomobile.dialog.Section@40528230
+10-29 12:40:56.554 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.SectionlayoutId=12monomobile.dialog.Section@40528230
+Element-Type=MonoMobile.Dialog.SectionlayoutId=12monomobile.dialog.Section@40528df8
+10-29 12:40:57.309 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.SectionlayoutId=12monomobile.dialog.Section@40528df8
+Element-Type=MonoMobile.Dialog.SectionlayoutId=12monomobile.dialog.Section@40529040
+10-29 12:40:57.329 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.SectionlayoutId=12monomobile.dialog.Section@40529040
+Element-Type=MonoMobile.Dialog.SectionlayoutId=12monomobile.dialog.Section@40529420
+10-29 12:40:57.950 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.SectionlayoutId=12monomobile.dialog.Section@40529420
+Element-Type=MonoMobile.Dialog.SectionlayoutId=12monomobile.dialog.Section@40529668
+10-29 12:40:57.965 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.SectionlayoutId=12monomobile.dialog.Section@40529668
+Element-Type=MonoMobile.Dialog.StringElementlayoutId=8monomobile.dialog.StringElement@40529cc8
+10-29 12:40:57.975 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.StringElementlayoutId=8monomobile.dialog.StringElement@40529cc8
+Element-Type=MonoMobile.Dialog.StringElementlayoutId=8monomobile.dialog.StringElement@40529e80
+Element-Type=MonoMobile.Dialog.StringElementlayoutId=8monomobile.dialog.StringElement@4052a038
+10-29 12:40:57.995 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.StringElementlayoutId=8monomobile.dialog.StringElement@40529e80
+10-29 12:40:58.000 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.StringElementlayoutId=8monomobile.dialog.StringElement@4052a038
+10-29 12:40:58.010 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.StringElementlayoutId=4monomobile.dialog.StringElement@4052a1f0
+10-29 12:40:58.040 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.BooleanElementlayoutId=9monomobile.dialog.BooleanElement@4052afc0
+10-29 12:40:58.055 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.BooleanElementlayoutId=9monomobile.dialog.BooleanElement@4052b178
+10-29 12:40:58.080 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.CheckboxElementlayoutId=1monomobile.dialog.CheckboxElement@4052b750
+
+Element-Type=MonoMobile.Dialog.StringElementlayoutId=4monomobile.dialog.StringElement@4052a1f0
+Element-Type=MonoMobile.Dialog.BooleanElementlayoutId=9monomobile.dialog.BooleanElement@4052afc0
+Element-Type=MonoMobile.Dialog.BooleanElementlayoutId=9monomobile.dialog.BooleanElement@4052b178
+Element-Type=MonoMobile.Dialog.CheckboxElementlayoutId=1monomobile.dialog.CheckboxElement@4052b750
+Element-Type=MonoMobile.Dialog.CheckboxElementlayoutId=1monomobile.dialog.CheckboxElement@4052b910
+10-29 12:40:58.090 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.CheckboxElementlayoutId=1monomobile.dialog.CheckboxElement@4052b910
+
+Element-Type=MonoMobile.Dialog.CheckboxElementlayoutId=1monomobile.dialog.CheckboxElement@4052bad0
+Element-Type=MonoMobile.Dialog.CheckboxElementlayoutId=3monomobile.dialog.CheckboxElement@4052bc90
+10-29 12:40:58.090 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.CheckboxElementlayoutId=1monomobile.dialog.CheckboxElement@4052bad0
+10-29 12:40:58.095 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.CheckboxElementlayoutId=3monomobile.dialog.CheckboxElement@4052bc90
+Element-Type=MonoMobile.Dialog.DateElementlayoutId=8monomobile.dialog.DateElement@4052c698
+10-29 12:40:58.155 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.DateElementlayoutId=8monomobile.dialog.DateElement@4052c698
+10-29 12:40:58.170 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.EntryElementlayoutId=17monomobile.dialog.EntryElement@4052d270
+10-29 12:40:58.175 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.EntryElementlayoutId=0monomobile.dialog.EntryElement@4052d420
+10-29 12:40:58.175 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.EntryElementlayoutId=0monomobile.dialog.EntryElement@4052d5d0
+10-29 12:40:58.190 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.FloatElementlayoutId=15monomobile.dialog.FloatElement@4052e418
+10-29 12:40:58.190 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.FloatElementlayoutId=0monomobile.dialog.FloatElement@4052e5c8
+10-29 12:40:58.190 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.FloatElementlayoutId=15monomobile.dialog.FloatElement@4052e778
+10-29 12:40:58.230 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.HtmlElementlayoutId=8monomobile.dialog.HtmlElement@4052ed28
+Element-Type=MonoMobile.Dialog.EntryElementlayoutId=17monomobile.dialog.EntryElement@4052d270
+Element-Type=MonoMobile.Dialog.EntryElementlayoutId=0monomobile.dialog.EntryElement@4052d420
+Element-Type=MonoMobile.Dialog.EntryElementlayoutId=0monomobile.dialog.EntryElement@4052d5d0
+Element-Type=MonoMobile.Dialog.FloatElementlayoutId=15monomobile.dialog.FloatElement@4052e418
+Element-Type=MonoMobile.Dialog.FloatElementlayoutId=0monomobile.dialog.FloatElement@4052e5c8
+Element-Type=MonoMobile.Dialog.FloatElementlayoutId=15monomobile.dialog.FloatElement@4052e778
+Element-Type=MonoMobile.Dialog.HtmlElementlayoutId=8monomobile.dialog.HtmlElement@4052ed28
+
+Element-Type=MonoMobile.Dialog.ImageElementlayoutId=0monomobile.dialog.ImageElement@4052f468
+Element-Type=MonoMobile.Dialog.MultilineElementlayoutId=14monomobile.dialog.MultilineElement@4052fa38
+Element-Type=MonoMobile.Dialog.MultilineElementlayoutId=14monomobile.dialog.MultilineElement@4052fbf8
+Element-Type=MonoMobile.Dialog.MultilineElementlayoutId=14monomobile.dialog.MultilineElement@4052fdb8
+Element-Type=MonoMobile.Dialog.RadioElementlayoutId=8monomobile.dialog.RadioElement@40530378
+Element-Type=MonoMobile.Dialog.RadioElementlayoutId=8monomobile.dialog.RadioElement@40530528
+Element-Type=MonoMobile.Dialog.TimeElementlayoutId=8monomobile.dialog.TimeElement@40530ad8
+10-29 12:40:58.230 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.ImageElementlayoutId=0monomobile.dialog.ImageElement@4052f468
+10-29 12:40:58.235 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.MultilineElementlayoutId=14monomobile.dialog.MultilineElement@4052fa38
+10-29 12:40:58.235 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.MultilineElementlayoutId=14monomobile.dialog.MultilineElement@4052fbf8
+10-29 12:40:58.235 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.MultilineElementlayoutId=14monomobile.dialog.MultilineElement@4052fdb8
+10-29 12:40:58.235 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.RadioElementlayoutId=8monomobile.dialog.RadioElement@40530378
+10-29 12:40:58.235 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.RadioElementlayoutId=8monomobile.dialog.RadioElement@40530528
+10-29 12:40:58.240 I/mono-stdout(16982): Element-Type=MonoMobile.Dialog.TimeElementlayoutId=8monomobile.dialog.TimeElement@40530ad8
+10-29 12:40:58.290 D/dalvikvm(16982): GC_EXTERNAL_ALLOC freed 75K, 53% free 2563K/5379K, external 0K/0K, paused 16ms
+10-29 12:40:58.380 D/CLIPBOARD(16982): Hide Clipboard dialog at Starting input: finished by someone else... !
+10-29 12:42:25.535 D/PhoneWindow(16982): couldn't save which view has focus because the focused view android.widget.ListView@405316a8 has no id.

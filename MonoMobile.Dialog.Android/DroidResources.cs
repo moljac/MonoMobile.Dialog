@@ -4,38 +4,28 @@ using Android.Content;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using System.Diagnostics;
 
 namespace MonoMobile.Dialog
 {
 	public static class DroidResources
 	{
-		public enum ElementLayout: int
+		public static View LoadFloatElementLayout
+			(
+			  Context context
+			, View convertView
+			, ViewGroup parent
+			, int layoutId
+			, out TextView label
+			, out SeekBar slider
+			, out ImageView left
+			, out ImageView right
+			)
 		{
-			dialog_boolfieldleft,
-			dialog_boolfieldright,
-			dialog_boolfieldsubleft,
-			dialog_boolfieldsubright,
+			string msg = "DroidResources.LoadFloatElementLayout " + "layoutid=" + layoutId.ToString();
+			Log.Info("MM.D", msg);
+			Debug.WriteLine(msg);
 
-			dialog_button,
-			dialog_datefield,
-			dialog_fieldsetlabel,
-			dialog_labelfieldbelow,
-			dialog_labelfieldright,
-			dialog_onofffieldright,
-			dialog_panel,
-			dialog_root,
-			dialog_selectlist,
-			dialog_selectlistfield,
-			dialog_textarea,
-
-			dialog_floatimage,
-
-			dialog_textfieldbelow,
-			dialog_textfieldright,
-		}
-
-		public static View LoadFloatElementLayout(Context context, View convertView, ViewGroup parent, int layoutId, out TextView label, out SeekBar slider, out ImageView left, out ImageView right)
-		{
 			View layout = convertView ?? LoadLayout(context, parent, layoutId);
 			if (layout != null)
 			{
@@ -56,6 +46,10 @@ namespace MonoMobile.Dialog
 
 		private static View LoadLayout(Context context, ViewGroup parent, int layoutId)
 		{
+			string msg = "DroidResources.LoadLayout " + "layoutid=" + layoutId.ToString();
+			Log.Info("MM.D", msg);
+			Debug.WriteLine(msg);
+
 			try
 			{
 				LayoutInflater inflater = LayoutInflater.FromContext(context);
@@ -84,6 +78,10 @@ namespace MonoMobile.Dialog
 
 		public static View LoadStringElementLayout(Context context, View convertView, ViewGroup parent, int layoutId, out TextView label, out TextView value)
 		{
+			string msg = "DroidResources.LoadStringElementLayout " + "layoutid=" + layoutId.ToString();
+			Log.Info("MM.D", msg);
+			Debug.WriteLine(msg);
+
 			View layout = convertView ?? LoadLayout(context, parent, layoutId);
 			if (layout != null)
 			{
@@ -106,6 +104,10 @@ namespace MonoMobile.Dialog
 
 		public static View LoadButtonLayout(Context context, View convertView, ViewGroup parent, int layoutId, out Button button)
 		{
+			string msg = "DroidResources.LoadButtonLayout " + "layoutid=" + layoutId.ToString();
+			Log.Info("MM.D", msg);
+			Debug.WriteLine(msg);
+
 			View layout = LoadLayout(context, parent, layoutId);
 			if (layout != null)
 			{
@@ -120,6 +122,10 @@ namespace MonoMobile.Dialog
 
 		public static View LoadMultilineElementLayout(Context context, View convertView, ViewGroup parent, int layoutId, out EditText value)
 		{
+			string msg = "DroidResources.LoadMultilineElementLayout " + "layoutid=" + layoutId.ToString();
+			Log.Info("MM.D", msg);
+			Debug.WriteLine(msg);
+
 			View layout = convertView ?? LoadLayout(context, parent, layoutId);
 			if (layout != null)
 			{
@@ -134,6 +140,10 @@ namespace MonoMobile.Dialog
 
 		public static View LoadBooleanElementLayout(Context context, View convertView, ViewGroup parent, int layoutId, out TextView label, out TextView subLabel, out View value)
 		{
+			string msg = "DroidResources.LoadBooleanElementLayout " + "layoutid=" + layoutId.ToString();
+			Log.Info("MM.D", msg);
+			Debug.WriteLine(msg);
+
 			View layout = convertView ?? LoadLayout(context, parent, layoutId);
 			if (layout != null)
 			{
@@ -153,6 +163,10 @@ namespace MonoMobile.Dialog
 
 		public static View LoadStringEntryLayout(Context context, View convertView, ViewGroup parent, int layoutId, out TextView label, out EditText value)
 		{
+			string msg = "DroidResources.LoadStringEntryLayout " + "layoutid=" + layoutId.ToString();
+			Log.Info("MM.D", msg);
+			Debug.WriteLine(msg);
+
 			View layout = LoadLayout(context, parent, layoutId);
 			if (layout != null)
 			{

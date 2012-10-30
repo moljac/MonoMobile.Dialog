@@ -18,9 +18,9 @@
     <TargetFrameworkVersion>v1.6</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
+    <DebugSymbols>True</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>False</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -29,13 +29,13 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>True</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
-    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -46,47 +46,262 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AchievementElement.cs" />
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\BooleanElement.cs">
+      <Link>BooleanElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\BoolElement.cs">
+      <Link>BoolElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\CheckboxElement.cs">
+      <Link>CheckboxElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\DateElement.cs">
+      <Link>DateElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\DateTimeElement.cs">
+      <Link>DateTimeElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\DialogNavigationControllerAdapter.cs">
+      <Link>DialogNavigationControllerAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\DialogViewController.cs">
+      <Link>DialogViewController.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\Element.cs">
+      <Link>Element.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\Element.Utilities.cs">
+      <Link>Element.Utilities.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\EntryElement.cs">
+      <Link>EntryElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\FloatElement.cs">
+      <Link>FloatElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\Group.cs">
+      <Link>Group.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\HolisticWare\NSUrl.cs">
+      <Link>HolisticWare\NSUrl.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\HtmlElement.cs">
+      <Link>HtmlElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\ImageElement.cs">
+      <Link>ImageElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\MultilineElement.cs">
+      <Link>MultilineElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\RadioElement.cs">
+      <Link>RadioElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\RadioGroup.cs">
+      <Link>RadioGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\RootElement.cs">
+      <Link>RootElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\Section.cs">
+      <Link>Section.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\StringElement.cs">
+      <Link>StringElement.cs</Link>
+    </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\TimeElement.cs">
+      <Link>TimeElement.cs</Link>
+    </Compile>
     <Compile Include="ActivityMonoMobileDialog.cs" />
-    <Compile Include="RootElement.TappedClicked.cs" />
-    <Compile Include="StringElement.ClickedTapped.cs" />
-    <Compile Include="DialogViewController.M4A.cs" />
-    <Compile Include="DialogInstanceData.cs" />
-    <Compile Include="RootElement.DialogActivity.cs" />
+    <Compile Include="BindingContext.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoolElement.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ButtonElement.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckboxElement.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BooleanElement.MA.cs" />
+    <Compile Include="Element.ToString.MA.cs" />
+    <Compile Include="ElementLayout.MA.cs" />
+    <Compile Include="HolisticWare\TextAlignment.MA.cs" />
+    <Compile Include="HtmlActivity.MA.cs" />
+    <Compile Include="TimeElement.MA.cs" />
+    <Compile Include="DateElement.MA.cs" />
+    <Compile Include="DateTimeElement.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DialogActivity.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DialogAdapter.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DialogHelper.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DialogInstanceData.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DialogViewController.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DialogViewController.Activity.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DroidResources.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Element.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Element.HolisticWare.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntryElement.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntryElement.Delta.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FloatElement.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RadioGroup.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HolisticWare\Screen.MA.cs" />
+    <Compile Include="HolisticWare\Screen.cs" />
     <Compile Include="HolisticWare\AdElement.cs" />
     <Compile Include="HolisticWare\AdElement.iAd.MA.cs" />
-    <Compile Include="BindingContext.cs" />
-    <Compile Include="BooleanElement.cs" />
-    <Compile Include="ButtonElement.cs" />
-    <Compile Include="CheckboxElement.cs" />
-    <Compile Include="Element.Delta.cs" />
-    <Compile Include="EntryElement.Delta.cs" />
-    <Compile Include="DateTimeElement.cs" />
-    <Compile Include="DialogActivity.cs" />
-    <Compile Include="DialogAdapter.cs" />
-    <Compile Include="DialogHelper.cs" />
-    <Compile Include="DroidResources.cs" />
-    <Compile Include="Element.cs" />
-    <Compile Include="EntryElement.cs" />
-    <Compile Include="FloatElement.cs" />
-    <Compile Include="Group.cs" />
-    <Compile Include="HtmlElement.cs" />
-    <Compile Include="IElementSizing.cs" />
-    <Compile Include="ImageElement.cs" />
-    <Compile Include="MultilineElement.cs" />
+    <Compile Include="HtmlElement.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IElementSizing.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImageElement.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultilineElement.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RadioElement.cs" />
-    <Compile Include="Reflect.cs" />
-    <Compile Include="RootElement.cs" />
-    <Compile Include="DialogViewController.cs" />
-    <Compile Include="Section.cs" />
-    <Compile Include="SectionAdapter.cs" />
-    <Compile Include="StringElement.cs" />
-    <Compile Include="ViewElement.cs" />
+    <Compile Include="RadioElement.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reflect.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RootElement.Constructors.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RootElement.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RootElement.DialogActivity.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RootElement.TappedClicked.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Section.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SectionAdapter.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StringElement.ClickedTapped.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StringElement.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utilities\LocalizationExtensions.MA.cs" />
+    <Compile Include="ViewElement.MA.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Drawable\dialog_disclosure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Drawable\dialog_expander_ic_minimized.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AchievementElement.MA.cs" />
+    <None Include="MonoMobile.Dialog.Android.ncrunchproject" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_textfieldright.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_boolfieldleft.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_boolfieldright.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_boolfieldsubleft.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_boolfieldsubright.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_button.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_datefield.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_fieldsetlabel.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_floatimage.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_labelfieldbelow.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_labelfieldright.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_onofffieldright.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_panel.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_root.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_selectlist.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_selectlistfield.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_textarea.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="Resources\Layout\dialog_textfieldbelow.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="readme.txt" />
+    <AndroidResource Include="Resources\Layout\dialog_achievements.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.wp.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="7e454455-83d1-4b65-bc72-ab1f3d79c02d" />
+    </VisualStudio>
+  </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
+	   Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
   <Target Name="AfterBuild">

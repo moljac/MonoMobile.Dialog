@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="MonoMobile.Dialog.SomeElement">
+    <Position X="18.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>A.Template of Element.WP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.BoolElement">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>BoolElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.DateElement">
+    <Position X="19.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DateElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.DateTimeElement">
+    <Position X="20.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAgCAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DateTimeElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.Element">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABCAAAAAACAgAAAAAAAAQAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Element.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.EntryElement">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACBAAAEAAAAAAAEBAAgAAAAIEAAAAACAAAgAgAAESA=</HashCode>
+      <FileName>EntryElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.FloatElement">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAAAAAAAABAAgAAAAAAAAAAEACAAACCAykAgQBAAA=</HashCode>
+      <FileName>FloatElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.Group">
+    <Position X="3.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Group.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.HtmlElement">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>HtmlElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.ImageElement">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAEAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>ImageElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.MultilineElement">
+    <Position X="17.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MultilineElement.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MonoMobile.Dialog.RadioElement">
+    <Position X="16" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>RadioElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.RadioGroup">
+    <Position X="3.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RadioGroup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.RootElement">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQAAAAwAAAAAAAAAAAAAAACAAAAAAAEQEAAAAAAAAA=</HashCode>
+      <FileName>RootElement.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MonoMobile.Dialog.Section">
+    <Position X="21.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Section.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.StringElement">
+    <Position X="17.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABCAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>StringElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.TimeElement">
+    <Position X="21.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TimeElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoMobile.Dialog.LocalizationExtensions">
+    <Position X="20" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\LocalizationExtensions.WP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MonoMobile.Dialog.IElementSizing">
+    <Position X="16.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IElementSizing.WP.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
