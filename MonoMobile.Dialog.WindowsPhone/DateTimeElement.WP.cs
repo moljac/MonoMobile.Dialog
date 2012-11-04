@@ -60,9 +60,26 @@ namespace MonoMobile.Dialog
 		/// <returns></returns>
 		public override FrameworkElement GetControl()
 		{
-			FrameworkElement fe = new DatePicker();
+			StackPanel sp_datetime_element = new StackPanel()
+			{
+			  Orientation = System.Windows.Controls.Orientation.Horizontal
+			, Name = "DateElement"
+			};
 
-			return fe;
+			TextBlock tb = new TextBlock()
+			{
+				Text = sp_datetime_element.Name
+			};
+
+			DatePicker dp = new DatePicker()
+			{
+			   Value = DateTime.Now
+			};
+
+			sp_datetime_element.Children.Add(tb);
+			sp_datetime_element.Children.Add(dp);
+
+			return sp_datetime_element;
 		}
 	}
 }

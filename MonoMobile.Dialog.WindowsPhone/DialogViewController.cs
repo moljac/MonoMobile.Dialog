@@ -24,10 +24,10 @@ namespace MonoMobile.Dialog
 			} // Root.get
 			set
 			{
-				//if (re != value)		// do not write if equivalent/equal/same
+				//if (e != value)		// do not write if equivalent/equal/same
 				{
 					// for multi threading apps uncomment lines beginnig with //MT:
-					//MT: lock(re) // MultiThread safe				
+					//MT: lock(e) // MultiThread safe				
 					{
 						root = value;
 						if (null != RootChanged)

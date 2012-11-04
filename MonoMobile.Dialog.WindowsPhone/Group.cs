@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace MonoMobile.Dialog
 {
 	/// <summary>
-	/// Used by re elements to fetch information when they need to
+	/// Used by e elements to fetch information when they need to
 	/// render a summary (Checkbox count or selected radio group).
 	/// </summary>
 	public partial class Group

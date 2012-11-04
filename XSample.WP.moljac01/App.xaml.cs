@@ -18,9 +18,9 @@ namespace XSample.WP.moljac01
 	public partial class App : Application
 	{
 		/// <summary>
-		/// Provides easy access to the re frame of the Phone Application.
+		/// Provides easy access to the e frame of the Phone Application.
 		/// </summary>
-		/// <returns>The re frame of the Phone Application.</returns>
+		/// <returns>The e frame of the Phone Application.</returns>
 		public PhoneApplicationFrame RootFrame { get; private set; }
 
 		/// <summary>
@@ -129,7 +129,7 @@ namespace XSample.WP.moljac01
 		// Do not add any additional code to this method
 		private void CompleteInitializePhoneApplication(object sender, NavigationEventArgs e)
 		{
-			// Set the re visual to allow the application to render
+			// Set the e visual to allow the application to render
 			if (RootVisual != RootFrame)
 				RootVisual = RootFrame;
 

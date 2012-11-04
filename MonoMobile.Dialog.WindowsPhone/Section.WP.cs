@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Media.Animation;
 using System.Windows.Controls;
 
+
 namespace MonoMobile.Dialog
 {
 	public partial class Section
@@ -65,8 +66,8 @@ namespace MonoMobile.Dialog
 		/// <summary>
 		/// Adds a new child Element to the Section
 		/// </summary>
-		/// <param name="element">
-		/// An element to add to the section.
+		/// <param name="fe">
+		/// An fe to add to the section.
 		/// </param>
 		public void Add(Element element)
 		{
@@ -181,14 +182,14 @@ namespace MonoMobile.Dialog
 				(
 				Parent != null 
 				&& 
-				// re.TableView != null		// MT.D
+				// e.TableView != null		// MT.D
 				root.StackPanel != null
 				)
 			{
 				//if (anim == UITableViewRowAnimation.None)
 				if (anim == anim)
 				{
-					// re.TableView.ReloadData();	// MT.D
+					// e.TableView.ReloadData();	// MT.D
 					root.StackPanel.UpdateLayout();
 				}
 				else
@@ -218,12 +219,12 @@ namespace MonoMobile.Dialog
 				count++;
 			}
 			var root = Parent as RootElement;
-			// if (re != null && re.TableView != null)	// MT.D
+			// if (e != null && e.TableView != null)	// MT.D
 			if (root != null && root.StackPanel != null)
 			{
 				// if (anim == UITableViewRowAnimation.None)	// MT.D
 				{
-					// re.TableView.ReloadData();	// MT.D
+					// e.TableView.ReloadData();	// MT.D
 					root.StackPanel.UpdateLayout();
 				}
 				// else
@@ -253,7 +254,7 @@ namespace MonoMobile.Dialog
 		{
 			var root = Parent as RootElement;
 
-			// if (re == null || re.TableView == null)
+			// if (e == null || e.TableView == null)
 			// 	return;
 			if (root == null || root.StackPanel == null)
 				return;
@@ -264,7 +265,7 @@ namespace MonoMobile.Dialog
 			// MT.D for (int i = 0; i < count; i++)
 			// MT.D 	paths[i] = NSIndexPath.FromRowSection(idx + i, sidx);
 
-			//  MT.D re.TableView.InsertRows(paths, anim);
+			//  MT.D e.TableView.InsertRows(paths, anim);
 			root.StackPanel.Children.Add
 				(
 				  new TextBlock()
@@ -336,7 +337,7 @@ namespace MonoMobile.Dialog
 
 			Elements.RemoveRange(start, count);
 
-			// MT.D if (re == null || re.TableView == null)
+			// MT.D if (e == null || e.TableView == null)
 			if (root == null || root.StackPanel == null)
 				return;
 
@@ -344,7 +345,7 @@ namespace MonoMobile.Dialog
 			// MT.D var paths = new NSIndexPath[count];
 			// MT.D for (int i = 0; i < count; i++)
 			// MT.D 	paths[i] = NSIndexPath.FromRowSection(start + i, sidx);
-			// MT.D re.TableView.DeleteRows(paths, anim);
+			// MT.D e.TableView.DeleteRows(paths, anim);
 			root.StackPanel.Children.Clear();
 		}
 		//-------------------------------------------------------------------------
@@ -358,12 +359,12 @@ namespace MonoMobile.Dialog
 			Elements = new List<Element>();
 
 			var root = Parent as RootElement;
-			// if (re != null && re.TableView != null)
-			//	re.TableView.ReloadData();
+			// if (e != null && e.TableView != null)
+			//	e.TableView.ReloadData();
 
 			if (root != null && root.StackPanel != null)
 			{
-				// re.TableView.ReloadData();	// MT.D
+				// e.TableView.ReloadData();	// MT.D
 				root.StackPanel.UpdateLayout();
 			}
 		}
@@ -399,9 +400,32 @@ namespace MonoMobile.Dialog
 		/// <returns></returns>
 		public override FrameworkElement GetControl()
 		{
-			FrameworkElement fe = new StackPanel();
+			System.Diagnostics.Debug.WriteLine("SectionElement.GetControl() ");
 
-			return fe;
+			StackPanel sp_section = new StackPanel()
+			{
+			  Orientation = System.Windows.Controls.Orientation.Vertical
+			, Name = "SectionElement"
+			};
+
+			TextBlock tb = new TextBlock()
+			{
+				Text = sp_section.Name
+			};
+			sp_section.Children.Add(tb);
+
+			foreach (Element e in this.Elements)
+			{
+				FrameworkElement fe = e.GetControl();
+
+				sp_section.Children.Add(fe);
+
+				System.Diagnostics.Debug.WriteLine("\t element = {0}", e.ToString());
+				System.Diagnostics.Debug.WriteLine("\t framework_element = {0}", fe.ToString());
+			}
+
+
+			return sp_section;
 		}
 	}
 }

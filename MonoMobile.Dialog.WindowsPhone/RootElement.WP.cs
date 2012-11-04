@@ -35,10 +35,10 @@ namespace MonoMobile.Dialog
 		/// The caption to render cref="System.String"/>
 		/// </param>
 		/// <param name="section">
-		/// The section that contains the element with the summary.
+		/// The section that contains the fe with the summary.
 		/// </param>
-		/// <param name="element">
-		/// The element index inside the section that contains the summary for this RootSection.
+		/// <param name="fe">
+		/// The fe index inside the section that contains the summary for this RootSection.
 		/// </param>
 		public RootElement(string caption, int section, int element)
 			: base(caption)
@@ -73,7 +73,7 @@ namespace MonoMobile.Dialog
 		/// Adds a new section to this RootElement
 		/// </summary>
 		/// <param name="section">
-		/// The section to add, if the re is visible, the section is inserted with no animation
+		/// The section to add, if the e is visible, the section is inserted with no animation
 		/// </param>
 		public void Add(Section section)
 		{
@@ -116,7 +116,7 @@ namespace MonoMobile.Dialog
 		/// </param>
 		/// <remarks>
 		///    This inserts the specified list of sections (a params argument) into the
-		///    re using the specified animation.
+		///    e using the specified animation.
 		/// </remarks>
 		public void Insert
 			(
@@ -168,7 +168,7 @@ namespace MonoMobile.Dialog
 		/// </param>
 		/// <remarks>
 		///    This inserts the specified list of sections (a params argument) into the
-		///    re using the Fade animation.
+		///    e using the Fade animation.
 		/// </remarks>
 		public void Insert(int idx, Section section)
 		{
@@ -306,9 +306,33 @@ namespace MonoMobile.Dialog
 		/// <returns></returns>
 		public override FrameworkElement GetControl()
 		{
-			FrameworkElement fe = new StackPanel();
+			System.Diagnostics.Debug.WriteLine("RootElement.GetControl() ");
 
-			return fe;
+			StackPanel sp_rootelement = new StackPanel()
+			{
+			  Orientation = System.Windows.Controls.Orientation.Vertical
+			, Name = "RootElement"
+			};
+
+			TextBlock tb = new TextBlock();
+			tb.Text = sp_rootelement.Name;
+			sp_rootelement.Children.Add(tb);
+
+			foreach (Section s in Sections)
+			{
+				FrameworkElement fe_section = s.GetControl();
+
+				sp_rootelement.Children.Add(fe_section);
+			}
+
+			//return sp_rootelement;
+
+			ScrollViewer scv = new ScrollViewer()
+			{
+				Content = sp_rootelement
+			};
+
+			 return scv;
 		}
 	}
 }

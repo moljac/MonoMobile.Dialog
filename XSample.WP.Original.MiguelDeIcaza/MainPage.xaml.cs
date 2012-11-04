@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Documents;
+// using System.Windows.Documents; mc++ Ambigious with MM.D Section
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
@@ -25,9 +25,17 @@ namespace XSample.WP.Original.MiguelDeIcaza
 		{
 			InitializeComponent();
 
-			RootElement re = new AppDelegate().CreateRootHolisticWare();
+			RootElement re =
+					new AppDelegate().CreateRootHolisticWare()
+					;
 
-			LayoutRoot.Children.Add(re);
+			DialogViewController dvc =
+					new DialogViewController(re)
+					// new DialogViewController(e, true)
+					;
+
+			// LayoutRoot
+			ContentPanel.Children.Add(dvc);
 
 			return;
 		}

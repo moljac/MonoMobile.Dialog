@@ -40,9 +40,26 @@ namespace MonoMobile.Dialog
 		/// <returns></returns>
 		public override FrameworkElement GetControl()
 		{
-			FrameworkElement fe = new CheckBox();
+			StackPanel sp_boolean_element = new StackPanel()
+			{
+			  Orientation = System.Windows.Controls.Orientation.Horizontal
+			, Name = "BooleanElement"
+			};
 
-			return fe;
+			TextBlock tb = new TextBlock()
+			{
+			  Text = sp_boolean_element.Name
+			};
+
+			CheckBox cb = new CheckBox()
+			{
+			  IsChecked = this.Value
+			};
+
+			sp_boolean_element.Children.Add(tb);
+			sp_boolean_element.Children.Add(cb);
+
+			return sp_boolean_element;
 		}
 	}
 }

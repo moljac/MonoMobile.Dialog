@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ReferencePath>..\MonoTouch\</ReferencePath>
-    <ReferencePath>D:\SRC\libraries-holisticware\MonoMobile.Dialog\MonoMobile.Dialog.Touch\..\MonoTouch\;D:\SRC\Core_2011\Core.DLL_201_BL_mClnt_CrossPlatform_MobileAPI_Xamarin\lib\</ReferencePath>
+    <ReferencePath>D:\SRC\Core_2011\Core.DLL_201_BL_mClnt_CrossPlatform_MobileAPI_Xamarin\lib\</ReferencePath>
     <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
 </Project>

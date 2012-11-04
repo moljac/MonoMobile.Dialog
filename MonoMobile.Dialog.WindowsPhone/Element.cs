@@ -5,7 +5,7 @@ namespace MonoMobile.Dialog
 	public abstract partial class Element
 	{
 		/// <summary>
-		///  The caption to display for this given element
+		///  The caption to display for this given fe
 		/// </summary>
 		public string Caption { get; set; }
 
@@ -14,12 +14,12 @@ namespace MonoMobile.Dialog
 		/// </summary>
 		/// <remarks>
 		/// For sections this points to a RootElement, for every other object this 
-		/// points to a Section and it is null for the re RootElement.
+		/// points to a Section and it is null for the e RootElement.
 		/// </remarks>
 		public Element Parent { get; set; }
 
 		/// <summary>
-		/// An Object that contains data about the element. The default is null.
+		/// An Object that contains data about the fe. The default is null.
 		/// 
 		/// Note mc++: Available in MA.D not in original MT.D
 		/// </summary>
@@ -34,7 +34,7 @@ namespace MonoMobile.Dialog
 		}
 		//-------------------------------------------------------------------------
 		/// <summary>
-		///  Initializes the element with the given caption.
+		///  Initializes the fe with the given caption.
 		/// </summary>
 		/// <param name="caption">
 		/// The caption.

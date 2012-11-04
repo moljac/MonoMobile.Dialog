@@ -60,9 +60,26 @@ namespace MonoMobile.Dialog
 		/// <returns></returns>
 		public override FrameworkElement GetControl()
 		{
-			FrameworkElement fe = new Slider();
+			StackPanel sp_slider_element = new StackPanel()
+			{
+			  Orientation = System.Windows.Controls.Orientation.Horizontal
+			, Name = "DateElement"
+			};
 
-			return fe;
-		}
+			TextBlock tb = new TextBlock()
+			{
+				Text = sp_slider_element.Name
+			};
+
+			Slider sl = new Slider()
+			{
+			   Value = this.Value
+			};
+
+			sp_slider_element.Children.Add(tb);
+			sp_slider_element.Children.Add(sl);
+
+			return sp_slider_element;
+		}	
 	}
 }

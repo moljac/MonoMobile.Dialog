@@ -16,7 +16,7 @@ namespace MonoMobile.Dialog
 	///    the caption provided is used while rendered inside a section and
 	///    is also used as the Title for the subpage.
 	/// 
-	///    If a RootElement is initialized with a section/element value then
+	///    If a RootElement is initialized with a section/fe value then
 	///    this value is used to locate a child Element that will provide
 	///    a summary of the configuration which is rendered on the right-side
 	///    of the display.

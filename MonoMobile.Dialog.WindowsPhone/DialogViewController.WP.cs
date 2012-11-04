@@ -2,12 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Windows.Controls;
+using System.Windows;
 
 namespace MonoMobile.Dialog
 {
 	public partial class DialogViewController
 		: 
 		// UITableViewController	// MT.D
+		// 
 		StackPanel
 	{
 		# region    Properites
@@ -21,10 +23,11 @@ namespace MonoMobile.Dialog
 		//-------------------------------------------------------------------------
 		public DialogViewController(RootElement re)
 		{
-			this.root = re;
-			// Is
-			// re.Parent = this;
-			this.Children.Add(re);
+			this.Root = re;
+
+			this.Loaded += new RoutedEventHandler(DialogViewController_Loaded);
+
+			return;
 		}
 		//-------------------------------------------------------------------------
 		public DialogViewController(RootElement root, bool pushing)
@@ -40,5 +43,32 @@ namespace MonoMobile.Dialog
 		}
 		//-------------------------------------------------------------------------
 		# endregion Constructors
+
+
+
+	
+		
+		
+		void DialogViewController_Loaded(object sender, RoutedEventArgs e)
+		{
+			this.Orientation = System.Windows.Controls.Orientation.Vertical;
+
+			if (null != this.Root)
+			{
+				ScrollViewer sp_root = this.Root.GetControl() as ScrollViewer;
+				try
+				{
+					this.Children.Add(sp_root);
+				}
+				catch (Exception exc)
+				{
+					string msg = exc.Message;
+				}
+			}
+
+
+			return;
+		}
+
 	}
 }

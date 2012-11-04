@@ -63,9 +63,19 @@ namespace MonoMobile.Dialog
 		/// <returns></returns>
 		public override FrameworkElement GetControl()
 		{
-			FrameworkElement fe = new TextBlock();
+			StackPanel sp_string_element = new StackPanel()
+			{
+			  Orientation = System.Windows.Controls.Orientation.Horizontal
+			, Name = "StringElement"
+			};
 
-			return fe;
+			TextBlock tb = new TextBlock();
+			tb.Text = sp_string_element.Name;
+
+
+			sp_string_element.Children.Add(tb);
+
+			return sp_string_element;
 		}
 	
 	}
