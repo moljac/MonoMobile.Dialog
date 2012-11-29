@@ -165,6 +165,17 @@
     <Compile Include="BoolElement.MT.cs" />
     <Compile Include="CustomElement.MT.cs" />
     <Compile Include="Element.ToString.MT.cs" />
+    <Compile Include="ElementCustom\ElementCustomDerived.cs" />
+    <Compile Include="ElementCustom\ElementCustomGeneric.cs" />
+    <Compile Include="ElementCustom\UITableViewCellCustom.cs" />
+    <Compile Include="ElementCustom\UITableViewCellCustom.designer.cs">
+      <DependentUpon>UITableViewCellCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElementCustom\UITableViewCellCustomAlternative.cs" />
+    <Compile Include="ElementCustom\UITableViewCellCustomAlternative.designer.cs">
+      <DependentUpon>UITableViewCellCustomAlternative.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElementCustom\UITableViewCellCustomListXIBless.cs" />
     <Compile Include="HtmlWebViewController.MT.cs" />
     <Compile Include="IElementSizing.MT.cs" />
     <Compile Include="RootElement.Constructors.MT.cs" />
@@ -190,6 +201,12 @@
     <Compile Include="RadioGroup.MT.cs" />
     <Compile Include="RootElement.MT.cs" />
     <Compile Include="HolisticWare\AdElement.iAd.MT.cs" />
+    <InterfaceDefinition Include="ElementCustom\UITableViewCellCustom.xib">
+      <DependentUpon>UITableViewCellCustom.cs</DependentUpon>
+    </InterfaceDefinition>
+    <InterfaceDefinition Include="ElementCustom\UITableViewCellCustomAlternative.xib">
+      <DependentUpon>UITableViewCellCustomAlternative.cs</DependentUpon>
+    </InterfaceDefinition>
     <None Include="Elements.cs" />
     <Compile Include="DialogViewController.MT.cs" />
     <Compile Include="Reflect.cs" />
@@ -280,10 +297,11 @@
     <Content Include="docs\MonoTouch.Dialog\UIViewElement.xml" />
     <Content Include="docs\ns-MonoTouch.Dialog.Utilities.xml" />
     <Content Include="docs\ns-MonoTouch.Dialog.xml" />
+    <None Include="ElementCustom\documentation.md" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkReference="7e454455-83d1-4b65-bc72-ab1f3d79c02d" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.wp.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.wp.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="7e454455-83d1-4b65-bc72-ab1f3d79c02d" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
