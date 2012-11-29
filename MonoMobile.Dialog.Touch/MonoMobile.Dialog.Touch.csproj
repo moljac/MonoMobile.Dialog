@@ -223,6 +223,8 @@
     <Compile Include="Utilities\GlassButton.cs" />
     <Compile Include="Utilities\LocalizationExtensions.MT.cs" />
     <Compile Include="Elements\Json.cs" />
+    <Compile Include="NormalizationExtensions\CheckBoxElement.MA.cs" />
+    <Compile Include="NormalizationExtensions\FloatElement.MA.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\arrow.png">
@@ -304,4 +306,7 @@
       <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.wp.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="7e454455-83d1-4b65-bc72-ab1f3d79c02d" />
     </VisualStudio>
   </ProjectExtensions>
+  <ItemGroup>
+    <Folder Include="NormalizationExtensions\" />
+  </ItemGroup>
 </Project>

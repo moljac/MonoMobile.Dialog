@@ -699,7 +699,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = XSample.MT.Original.MiguelDeIcaza\XSample.MT.Original.MiguelDeIcaza.csproj
+		StartupItem = XSample.MT.KevinMcMahon.DialogSampleApp\XSample.MT.KevinMcMahon.DialogSampleApp.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
