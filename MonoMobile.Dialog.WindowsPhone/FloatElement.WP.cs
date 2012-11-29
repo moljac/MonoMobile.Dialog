@@ -63,7 +63,7 @@ namespace MonoMobile.Dialog
 			StackPanel sp_slider_element = new StackPanel()
 			{
 			  Orientation = System.Windows.Controls.Orientation.Horizontal
-			, Name = "DateElement"
+			, Name = "FloatElement"
 			};
 
 			TextBlock tb = new TextBlock()

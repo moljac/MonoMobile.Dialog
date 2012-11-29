@@ -49,7 +49,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Maps, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e" />
     <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Windows" />
     <Reference Include="system" />
     <Reference Include="System.Core" />
@@ -65,6 +70,23 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SamplePages\PageLandscape.xaml.cs">
+      <DependentUpon>PageLandscape.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SamplePages\PageMVP.xaml.cs">
+      <DependentUpon>PageMVP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SamplePages\PageMVPModel.cs" />
+    <Compile Include="SamplePages\PageMVPPresenter.cs" />
+    <Compile Include="SamplePages\PagePanorama.xaml.cs">
+      <DependentUpon>PagePanorama.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SamplePages\PagePivot.xaml.cs">
+      <DependentUpon>PagePivot.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SamplePages\PagePortrait.xaml.cs">
+      <DependentUpon>PagePortrait.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -72,6 +94,26 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SamplePages\PageLandscape.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SamplePages\PageMVP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SamplePages\PagePanorama.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SamplePages\PagePivot.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SamplePages\PagePortrait.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

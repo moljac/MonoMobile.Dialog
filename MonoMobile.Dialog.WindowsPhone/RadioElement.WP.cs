@@ -22,9 +22,24 @@ namespace MonoMobile.Dialog
 		/// <returns></returns>
 		public override FrameworkElement GetControl()
 		{
-			FrameworkElement fe = new RadioButton();
+			StackPanel sp_radio_element = new StackPanel()
+			{
+			  Orientation = System.Windows.Controls.Orientation.Vertical
+			, Name = "MultilineElement"
+			};
 
-			return fe;
+			TextBlock tb_caption = new TextBlock()
+			{
+				Text = this.Caption
+			};
+			RadioButton rb_value = new RadioButton()
+			{
+			};
+
+			sp_radio_element.Children.Add(tb_caption);
+			sp_radio_element.Children.Add(rb_value);
+
+			return sp_radio_element;
 		}
 	}
 }

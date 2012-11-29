@@ -55,6 +55,9 @@
     <Compile Include="..\MonoMobile.Dialog.WindowsPhone\CheckboxElement.cs">
       <Link>CheckboxElement.cs</Link>
     </Compile>
+    <Compile Include="..\MonoMobile.Dialog.WindowsPhone\CustomElement.cs">
+      <Link>CustomElement.cs</Link>
+    </Compile>
     <Compile Include="..\MonoMobile.Dialog.WindowsPhone\DateElement.cs">
       <Link>DateElement.cs</Link>
     </Compile>
@@ -126,6 +129,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="BooleanElement.MA.cs" />
+    <Compile Include="CustomElement.MA.cs" />
     <Compile Include="Element.ToString.MA.cs" />
     <Compile Include="ElementLayout.MA.cs" />
     <Compile Include="HolisticWare\TextAlignment.MA.cs" />
@@ -297,7 +301,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.wp.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="7e454455-83d1-4b65-bc72-ab1f3d79c02d" />
+      <UserProperties ProjectLinkReference="7e454455-83d1-4b65-bc72-ab1f3d79c02d" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.wp.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

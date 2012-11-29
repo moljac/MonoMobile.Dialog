@@ -58,6 +58,8 @@
     <Compile Include="BooleanElement.cs" />
     <Compile Include="CheckboxElement.WP.cs" />
     <Compile Include="CheckboxElement.cs" />
+    <Compile Include="CustomElement.WP.cs" />
+    <Compile Include="CustomElement.cs" />
     <Compile Include="RadioElement.WP.cs" />
     <Compile Include="Element.ToString.WP.cs" />
     <Compile Include="DialogNavigationControllerAdapter.cs" />

@@ -68,7 +68,7 @@ namespace MonoMobile.Dialog
 
 			TextBlock tb = new TextBlock()
 			{
-				Text = sp_datetime_element.Name
+			  Text = sp_datetime_element.Name
 			};
 
 			DatePicker dp = new DatePicker()

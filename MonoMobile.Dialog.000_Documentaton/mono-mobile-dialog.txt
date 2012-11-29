@@ -1,0 +1,7 @@
+MT.D MA.D diffs ironed out
+   MA.D ctors with LayoutID made protected
+   MT.D fileds -> properties to catch Events (FloatElement sliding does not refresh UI 
+   using pull to refresh?!! overkill)
+WP.D added compile clean
+   TODO: traversal and UI generation in DialogViewConotroller 
+   

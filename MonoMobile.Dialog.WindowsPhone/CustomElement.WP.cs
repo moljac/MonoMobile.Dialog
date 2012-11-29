@@ -2,48 +2,53 @@
 using System.Collections;
 using System.Collections.Generic;
 
-using System.Windows.Media.Imaging;
-
 using System.Windows;
+using System.Windows.Media.Animation;
 using System.Windows.Controls;
-using System.Windows.Media;
 
 namespace MonoMobile.Dialog
 {
-	public partial class ImageElement
+	public partial class CustomElement
+		: Element
 	{
 		# region    Properites
 		//-------------------------------------------------------------------------
-		public Image Value
+		public string Value
 		{
-			get { return image; }
+			get
+			{
+				return _value;
+			}
 			set
 			{
-				image = value;
-				if (image_control_view_widget != null)
-				{
-					image_control_view_widget.
-							// SetImageBitmap(image) MA
-							Source = new BitmapImage()
-							;
-				}
+				_value = value;
 			}
 		}
-		Image image;
+		private string _value;
 		//-------------------------------------------------------------------------
 		# endregion Properites
 
 		# region    Constructors
 		//-------------------------------------------------------------------------
-		public ImageElement(Image image)
-			: base("")
+		public CustomElement(string caption) 
+			: base(caption) 
 		{
-			image = image;
 		}
 		//-------------------------------------------------------------------------
+		public CustomElement(string caption, string value)
+			: base(caption)
+		{
+			this.Value = value;
+		}
+		//-------------------------------------------------------------------------
+		public CustomElement(string caption, Action tapped)
+			: base(caption)
+		{
+			Tapped += tapped;
+		}
+		public event Action Tapped;
+		//-------------------------------------------------------------------------
 		# endregion Constructors
-
-		Image image_control_view_widget;
 
 		/// <summary>
 		/// MT.D: public override UITableViewCell GetCell(UITableView tv)
@@ -57,39 +62,23 @@ namespace MonoMobile.Dialog
 		/// <returns></returns>
 		public override FrameworkElement GetControl()
 		{
-			StackPanel sp_image_element = new StackPanel()
+			StackPanel sp_string_element = new StackPanel()
 			{
 			  Orientation = System.Windows.Controls.Orientation.Horizontal
-			, Name = "ImageElement"
+			, Name = "StringElement"
 			};
 
-			TextBlock tb = new TextBlock()
-			{
-			  Text = this.Caption
-			};
+			TextBlock tb_caption = new TextBlock();
+			tb_caption.Text = this.Caption;
 
-			Image dp = null;
+			TextBlock tb_value = new TextBlock();
+			tb_value.Text = this.Value;
 
-			if (null == this.image)
-			{
-				Uri u = new Uri
-							(
-							  "http://holisticware.net/Frontend/Images/logo.png"
-							, UriKind.RelativeOrAbsolute
-							);
-				BitmapImage bi = new BitmapImage(u);
-				this.image = new Image()
-				{
-					Source = bi
-				};
-			}
+			sp_string_element.Children.Add(tb_caption);
+			sp_string_element.Children.Add(tb_value);
 
-			dp = this.image;
-
-			sp_image_element.Children.Add(tb);
-			sp_image_element.Children.Add(dp);
-
-			return sp_image_element;
+			return sp_string_element;
 		}
+	
 	}
 }

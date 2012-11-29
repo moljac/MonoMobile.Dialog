@@ -53,9 +53,26 @@ namespace MonoMobile.Dialog
 		/// <returns></returns>
 		public override FrameworkElement GetControl()
 		{
-			FrameworkElement fe = new WebBrowser();
+			StackPanel sp_button_navigate = new StackPanel()
+			{
+			  Orientation = System.Windows.Controls.Orientation.Horizontal
+			, Name = "DateElement"
+			};
 
-			return fe;
+			TextBlock tb = new TextBlock()
+			{
+				Text = this.Caption
+			};
+
+			Button b = new Button()
+			{
+				Content = "Visit/View"
+			};
+
+			sp_button_navigate.Children.Add(tb);
+			sp_button_navigate.Children.Add(b);
+
+			return sp_button_navigate;
 		}
 	}
 }

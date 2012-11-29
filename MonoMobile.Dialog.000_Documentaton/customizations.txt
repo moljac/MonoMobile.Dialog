@@ -1,0 +1,14 @@
+﻿Custom Cells in Dialog
+
+	http://tirania.org/monomac/archive/2011/Jan-18.html
+	http://stackoverflow.com/questions/10456732/monotouch-dialog-custom-element-and-getheight-not-being-called
+
+	http://stackoverflow.com/questions/10447708/monotouch-dialog-news-style-element-with-drill-down-capability
+
+	http://stackoverflow.com/questions/7850480/monotouch-dialog-custom-font
+Glass Button on Dialog
+	https://gist.github.com/1362490
+
+
+
+	http://monotouch.2284126.n4.nabble.com/MT-Dialog-right-aligned-EntryElement-td4341288.html

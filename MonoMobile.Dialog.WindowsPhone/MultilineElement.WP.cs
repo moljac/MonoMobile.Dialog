@@ -57,9 +57,25 @@ namespace MonoMobile.Dialog
 		/// <returns></returns>
 		public override FrameworkElement GetControl()
 		{
-			FrameworkElement fe = new TextBox(); // ???
+			StackPanel sp_multiline_element = new StackPanel()
+			{
+			  Orientation = System.Windows.Controls.Orientation.Vertical
+			, Name = "MultilineElement"
+			};
 
-			return fe;
+			TextBlock tb_caption = new TextBlock()
+			{
+				Text = this.Caption
+			};
+			TextBlock tb_value = new TextBlock()
+			{
+			  Text = this.Value
+			};
+
+			sp_multiline_element.Children.Add(tb_caption);
+			sp_multiline_element.Children.Add(tb_value);
+
+			return sp_multiline_element;
 		}
 	}
 }

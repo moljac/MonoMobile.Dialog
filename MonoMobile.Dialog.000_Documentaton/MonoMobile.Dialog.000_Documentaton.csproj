@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Comparison.txt" />
+    <Content Include="customizations.txt" />
     <Content Include="Testing\MA.D.txt" />
   </ItemGroup>
   <ItemGroup>

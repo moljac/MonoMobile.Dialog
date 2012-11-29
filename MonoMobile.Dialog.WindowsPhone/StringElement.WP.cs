@@ -69,11 +69,14 @@ namespace MonoMobile.Dialog
 			, Name = "StringElement"
 			};
 
-			TextBlock tb = new TextBlock();
-			tb.Text = sp_string_element.Name;
+			TextBlock tb_caption = new TextBlock();
+			tb_caption.Text = this.Caption;
 
+			TextBlock tb_value = new TextBlock();
+			tb_value.Text = this.Value;
 
-			sp_string_element.Children.Add(tb);
+			sp_string_element.Children.Add(tb_caption);
+			sp_string_element.Children.Add(tb_value);
 
 			return sp_string_element;
 		}
