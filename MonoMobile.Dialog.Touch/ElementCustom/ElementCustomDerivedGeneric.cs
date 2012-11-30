@@ -6,7 +6,7 @@ using MonoTouch.ObjCRuntime;
 
 namespace MonoMobile.Dialog
 {
-	public partial class ElementCustomGeneric<BusinessLogicType, PresentationType> 
+	public partial class ElementCustomDerivedGeneric<BusinessLogicType, PresentationType> 
 		: 
 		//MonoTouch.Dialog.Element
 		MonoMobile.Dialog.Element
@@ -64,10 +64,10 @@ namespace MonoMobile.Dialog
 		NSArray 			views_from_xib;
 		public string 		XIBNIBName = "CustomListCell";
 		public UITableView	ParentTableView;
-		UITableViewCellCustomAlternative cell;
+		// remove this UITableViewCellCustomAlternative cell;
 		//---------------------------------------------------------------------
 
-		public ElementCustomGeneric () : base (null)
+		public ElementCustomDerivedGeneric () : base (null)
 		{
 		}
 
@@ -80,10 +80,16 @@ namespace MonoMobile.Dialog
 			// TODO: Implement - see: http://go-mono.com/docs/index.aspx?link=T%3aMonoTouch.Foundation.ModelAttribute
 
 			ParentTableView = tv;
+			
 			// Reuse a cell if one exists
-			cell = ParentTableView.DequeueReusableCell("UITableViewCellCustomAlternative")
-					as UITableViewCellCustomAlternative;
-			PresentationObjectCell = ParentTableView.DequeueReusableCell("UITableViewCellCustomAlternative");
+			// cell = 
+			//	ParentTableView.DequeueReusableCell("UITableViewCellCustomAlternative")
+			//		as UITableViewCellCustomAlternative;
+
+
+			// Reuse a cell if one exists
+			PresentationObjectCell = 
+				ParentTableView.DequeueReusableCell("UITableViewCellCustomAlternative");
 
 			if (null == PresentationObjectCell)
 			{

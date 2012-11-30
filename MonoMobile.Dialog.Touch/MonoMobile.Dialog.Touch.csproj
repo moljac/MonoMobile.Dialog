@@ -166,7 +166,6 @@
     <Compile Include="CustomElement.MT.cs" />
     <Compile Include="Element.ToString.MT.cs" />
     <Compile Include="ElementCustom\ElementCustomDerived.cs" />
-    <Compile Include="ElementCustom\ElementCustomGeneric.cs" />
     <Compile Include="ElementCustom\UITableViewCellCustom.cs" />
     <Compile Include="ElementCustom\UITableViewCellCustom.designer.cs">
       <DependentUpon>UITableViewCellCustom.cs</DependentUpon>
@@ -225,6 +224,7 @@
     <Compile Include="Elements\Json.cs" />
     <Compile Include="NormalizationExtensions\CheckBoxElement.MA.cs" />
     <Compile Include="NormalizationExtensions\FloatElement.MA.cs" />
+    <Compile Include="ElementCustom\ElementCustomDerivedGeneric.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\arrow.png">
