@@ -82,7 +82,6 @@
     <Compile Include="SamplePages\PagePortrait.xaml.cs">
       <DependentUpon>PagePortrait.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserInterfaceForTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

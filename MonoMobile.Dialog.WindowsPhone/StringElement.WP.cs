@@ -65,7 +65,7 @@ namespace MonoMobile.Dialog
 		{
 			StackPanel sp_string_element = new StackPanel()
 			{
-			  Orientation = System.Windows.Controls.Orientation.Horizontal
+			  Orientation = System.Windows.Controls.Orientation.Vertical
 			, Name = "StringElement"
 			};
 
@@ -74,6 +74,9 @@ namespace MonoMobile.Dialog
 
 			TextBlock tb_value = new TextBlock();
 			tb_value.Text = this.Value;
+			tb_value.FontSize = tb_value.FontSize - 0.2;
+			tb_value.FontWeight = FontWeights.ExtraLight;
+			tb_value.TextWrapping = TextWrapping.Wrap;
 
 			sp_string_element.Children.Add(tb_caption);
 			sp_string_element.Children.Add(tb_value);

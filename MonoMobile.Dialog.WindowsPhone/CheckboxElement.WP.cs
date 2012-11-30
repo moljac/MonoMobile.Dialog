@@ -71,7 +71,7 @@ namespace MonoMobile.Dialog
 
 			TextBlock tb = new TextBlock()
 			{
-				Text = sp_checkbox_element.Name
+				Text = this.Caption
 			};
 
 			CheckBox cb = new CheckBox()

@@ -312,27 +312,27 @@ namespace MonoMobile.Dialog
 			{
 			  Orientation = System.Windows.Controls.Orientation.Vertical
 			, Name = "RootElement"
+			,VerticalAlignment = System.Windows.VerticalAlignment.Stretch
 			};
 
 			TextBlock tb = new TextBlock();
-			tb.Text = sp_rootelement.Name;
+			tb.Text = this.Caption;
 			sp_rootelement.Children.Add(tb);
 
 			foreach (Section s in Sections)
 			{
 				FrameworkElement fe_section = s.GetControl();
-
 				sp_rootelement.Children.Add(fe_section);
 			}
 
 			//return sp_rootelement;
 
-			ScrollViewer scv = new ScrollViewer()
-			{
-				Content = sp_rootelement
-			};
+			//ScrollViewer scv = new ScrollViewer()
+			//{
+			//    Content = sp_rootelement
+			//};
 
-			 return scv;
+			return sp_rootelement;
 		}
 	}
 }
