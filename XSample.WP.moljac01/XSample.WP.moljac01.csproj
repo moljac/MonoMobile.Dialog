@@ -73,11 +73,6 @@
     <Compile Include="SamplePages\PageLandscape.xaml.cs">
       <DependentUpon>PageLandscape.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SamplePages\PageMVP.xaml.cs">
-      <DependentUpon>PageMVP.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="SamplePages\PageMVPModel.cs" />
-    <Compile Include="SamplePages\PageMVPPresenter.cs" />
     <Compile Include="SamplePages\PagePanorama.xaml.cs">
       <DependentUpon>PagePanorama.xaml</DependentUpon>
     </Compile>
@@ -98,10 +93,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SamplePages\PageLandscape.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SamplePages\PageMVP.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
