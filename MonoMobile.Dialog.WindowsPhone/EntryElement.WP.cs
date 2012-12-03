@@ -93,18 +93,18 @@ namespace MonoMobile.Dialog
 		{
 			StackPanel sp_section = new StackPanel()
 			{
-			  Orientation = System.Windows.Controls.Orientation.Horizontal
-			, Name = "EntryElement"
+			  Orientation = System.Windows.Controls.Orientation.Vertical
 			};
 
 			TextBlock tb = new TextBlock();
-			tb.Text = sp_section.Name;
+			tb.Text = this.Caption;
 
-
-
+			entry = new TextBox();
+			entry.Text = this.Value;
 
 
 			sp_section.Children.Add(tb);
+			sp_section.Children.Add(entry);
 
 			return sp_section;
 		}

@@ -410,8 +410,9 @@ namespace MonoMobile.Dialog
 
 			TextBlock tb = new TextBlock()
 			{
-				Text = sp_section.Name
+				Text = this.Caption
 			};
+			
 			sp_section.Children.Add(tb);
 
 			foreach (Element e in this.Elements)

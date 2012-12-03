@@ -6,8 +6,15 @@ using System.Windows;
 
 namespace MonoMobile.Dialog
 {
+	/// <summary>
+	/// DialogViewController is StackPanel.
+	/// Avoid making it Scrollviewer cause ScrollViewer is
+	/// hard to maintain when stacked one into another.
+	/// Therefore leave the final 'scrooling' decision
+	/// to the final developer;
+	/// </summary>
 	public partial class DialogViewController
-		: 
+		:
 		// UITableViewController	// MT.D
 		// 
 		StackPanel
@@ -46,29 +53,27 @@ namespace MonoMobile.Dialog
 
 
 
-	
-		
-		
 		void DialogViewController_Loaded(object sender, RoutedEventArgs e)
 		{
 			this.Orientation = System.Windows.Controls.Orientation.Vertical;
 
 			if (null != this.Root)
 			{
-				ScrollViewer sp_root = this.Root.GetControl() as ScrollViewer;
+				StackPanel sp_root = this.Root.GetControl() as StackPanel;
 				try
 				{
 					this.Children.Add(sp_root);
 				}
 				catch (Exception exc)
 				{
-					string msg = exc.Message;
+					MessageBox.Show(exc.Message);
 				}
 			}
 
-
 			return;
+
 		}
 
 	}
+
 }
