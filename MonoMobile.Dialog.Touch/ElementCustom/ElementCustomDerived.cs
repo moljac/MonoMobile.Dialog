@@ -9,7 +9,7 @@ using MonoMobile.Dialog;
 
 namespace MonoMobile.Dialog
 {
-	public class ElementCustomDerived : Element
+	public partial class ElementCustomDerived : Element
 	{
 		public ElementCustomDerived () : base (null)
 		{
@@ -43,20 +43,34 @@ namespace MonoMobile.Dialog
 			// TODO: Implement - see: http://go-mono.com/docs/index.aspx?link=T%3aMonoTouch.Foundation.ModelAttribute
 			
 			// Reuse a cell if one exists
-			CellCustom  = tv.DequeueReusableCell ("UITableViewCellCustom") as UITableViewCellCustom;
+			CellCustom = tv.DequeueReusableCell ("UITableViewCellCustom") as UITableViewCellCustom;
 			
-			if ( null == CellCustom) 
-			{   
+			if (null == CellCustom) {   
 				//  Allocate a cell from XIB
 				NSArray views = NSBundle.MainBundle.LoadNib (xib_name, tv, null);
 				CellCustom = Runtime.GetNSObject (views.ValueAt (0)) as UITableViewCellCustom;
 			}
 			
-			// This cell has been used before, so we need to update it's data
+		
+			if (null == UpdateData) {
+				string msg = "ElementCustomDerived needs delegate for update";
+				System.Diagnostics.Debug.WriteLine (msg);
+			} else {
+				UpdateData(CellCustom);
+			}
+				
+						// This cell has been used before, so we need to update it's data
 			//cell.UpdateWithData (_testData [indexPath.Row]);   
 			
 			return CellCustom;
 		}
+		
+		
+		
+		
+		public delegate void UpdateDataDelegate(UITableViewCell cell);
+		public event UpdateDataDelegate UpdateData;
+		
 	}
 }
 
