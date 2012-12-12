@@ -40,6 +40,12 @@ namespace XSample.MT.MTDMiguels.VisualStudioCompileError
 				{
 					new Section ("Section")
 					{
+						// IN Visual Studio compile time error:
+						// Error	1	
+						// The call is ambiguous between the following methods or properties: 
+						// 'MonoTouch.Dialog.Section.Add(System.Collections.Generic.IEnumerable<MonoTouch.Dialog.Element>)' 
+						// and 
+						// 'MonoTouch.Dialog.Section.Add(MonoTouch.Dialog.Element)'	
 						new RootElement ("RootElement nested")
 					}
 				};
