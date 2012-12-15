@@ -9,42 +9,46 @@ namespace MonoMobile.Dialog
 {
 	public partial class UITableViewCellCustomListXIBless : UITableViewCell
 	{  
-		UIButton btnDelete;
-		UILabel lblName; 
-		UILabel lblDate;
 
 		public UITableViewCellCustomListXIBless () : base()
 		{
-			DrawCell();
+			UIView view = UIViewFactory();
+			this.AddSubview(view);
+
+			return;
 		}
 		
 		public UITableViewCellCustomListXIBless (IntPtr handle) : base(handle)
 		{
-			DrawCell();
+			UIView view = UIViewFactory();
+			this.AddSubview(view);
+
+			return;
 		}
 		
 		// TODO: delegate
 		public void UpdateData(string name, string timespan, bool delete)
-		{
-			lblName.Text = name;
-			lblDate.Text = timespan;
-			btnDelete.Hidden = false;	// (Mapping["delte"] == "true") ? true : false;
-			
+		{			
 			// make View dirty
 			this.SetNeedsDisplay();
 
 		}
 
 		//CUSTOM CELL
-		public UIView[] DrawCell()
+		public UIView UIViewFactory()
 		{
-			ContentView.Frame = new RectangleF(0,0,768,44);
+			UIView uiview_xibless = new UIView();
+			uiview_xibless.Frame = new RectangleF(0,0,768,44);
+
+			UIButton btnDelete;
+			UILabel lblName;
+			UILabel lblDate;
 
 			btnDelete = UIButton.FromType(UIButtonType.Custom);
 			btnDelete.Frame = new RectangleF(7,8,103,27);
 	
 			//UIControlState = Normal -> default system state for iOS element
-			//UIControlState = Highlited -> Highlighted state of a control. 
+			//UIControlState = Highlighted -> Highlighted state of a control. 
 			//								A control enters this state when a touch enters and exits 
 			//								during tracking and when there is a touch up event.
 			btnDelete.SetTitleColor(UIColor.Blue,UIControlState.Normal);
@@ -68,10 +72,9 @@ namespace MonoMobile.Dialog
 				lblDate
 			};
 
-			
-			ContentView.AddSubviews(views);
+			uiview_xibless.AddSubviews(views);
 
-			return views;
+			return uiview_xibless;
 		}
 
 		
