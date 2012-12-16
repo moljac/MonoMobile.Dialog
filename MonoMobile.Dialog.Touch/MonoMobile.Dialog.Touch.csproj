@@ -165,16 +165,6 @@
     <Compile Include="BoolElement.MT.cs" />
     <Compile Include="CustomElement.MT.cs" />
     <Compile Include="Element.ToString.MT.cs" />
-    <Compile Include="ElementCustom\ElementCustomDerived.cs" />
-    <Compile Include="ElementCustom\UITableViewCellCustom.cs" />
-    <Compile Include="ElementCustom\UITableViewCellCustom.designer.cs">
-      <DependentUpon>UITableViewCellCustom.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ElementCustom\UITableViewCellCustomAlternative.cs" />
-    <Compile Include="ElementCustom\UITableViewCellCustomAlternative.designer.cs">
-      <DependentUpon>UITableViewCellCustomAlternative.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ElementCustom\UITableViewCellCustomListXIBless.cs" />
     <Compile Include="HtmlWebViewController.MT.cs" />
     <Compile Include="IElementSizing.MT.cs" />
     <Compile Include="RootElement.Constructors.MT.cs" />
@@ -200,12 +190,6 @@
     <Compile Include="RadioGroup.MT.cs" />
     <Compile Include="RootElement.MT.cs" />
     <Compile Include="HolisticWare\AdElement.iAd.MT.cs" />
-    <InterfaceDefinition Include="ElementCustom\UITableViewCellCustom.xib">
-      <DependentUpon>UITableViewCellCustom.cs</DependentUpon>
-    </InterfaceDefinition>
-    <InterfaceDefinition Include="ElementCustom\UITableViewCellCustomAlternative.xib">
-      <DependentUpon>UITableViewCellCustomAlternative.cs</DependentUpon>
-    </InterfaceDefinition>
     <None Include="Elements.cs" />
     <Compile Include="DialogViewController.MT.cs" />
     <Compile Include="Reflect.cs" />
@@ -224,7 +208,31 @@
     <Compile Include="Elements\Json.cs" />
     <Compile Include="NormalizationExtensions\CheckBoxElement.MA.cs" />
     <Compile Include="NormalizationExtensions\FloatElement.MA.cs" />
-    <Compile Include="ElementCustom\ElementCustomDerivedGeneric.cs" />
+    <Compile Include="ElementCustom\obsolete\UITableViewCellCustom.designer.cs">
+      <DependentUpon>UITableViewCellCustom.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="ElementCustom\obsolete\UITableViewCellCustomAlternative.xib">
+      <DependentUpon>UITableViewCellCustomAlternative.cs</DependentUpon>
+    </InterfaceDefinition>
+    <None Include="ElementCustom\obsolete\ElementCustomDerived.cs" />
+    <None Include="ElementCustom\obsolete\ElementCustomDerivedGeneric.cs" />
+    <None Include="ElementCustom\obsolete\UITableViewCellCustom.cs" />
+    <None Include="ElementCustom\obsolete\UITableViewCellCustomAlternative.cs" />
+    <None Include="ElementCustom\obsolete\UITableViewCellCustomListXIBless.cs" />
+    <None Include="ElementCustom\obsolete\UITableViewCellCustom.xib">
+      <DependentUpon>UITableViewCellCustom.cs</DependentUpon>
+    </None>
+    <None Include="ElementCustom\obsolete\UITableViewCellCustomAlternative.designer.cs">
+      <DependentUpon>UITableViewCellCustomAlternative.cs</DependentUpon>
+    </None>
+    <Compile Include="ElementCustom\ElementDerivedCustom.cs" />
+    <Compile Include="ElementCustom\ElementDerivedCustom.DataBind.cs">
+      <DependentUpon>ElementDerivedCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElementCustom\UITableViewCellCustom.cs" />
+    <Compile Include="ElementCustom\UITableViewCellCustom.DataBind.cs">
+      <DependentUpon>UITableViewCellCustom.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\arrow.png">
@@ -308,5 +316,6 @@
   </ProjectExtensions>
   <ItemGroup>
     <Folder Include="NormalizationExtensions\" />
+    <Folder Include="ElementCustom\obsolete\" />
   </ItemGroup>
 </Project>
