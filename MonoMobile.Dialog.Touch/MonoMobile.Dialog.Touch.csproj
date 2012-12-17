@@ -165,6 +165,14 @@
     <Compile Include="BoolElement.MT.cs" />
     <Compile Include="CustomElement.MT.cs" />
     <Compile Include="Element.ToString.MT.cs" />
+    <Compile Include="ElementCustom\ElementCustom.DataBinding.cs">
+      <DependentUpon>ElementCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElementCustom\ElementCustom.cs" />
+    <Compile Include="ElementCustom\UITableViewCellCustom.cs" />
+    <Compile Include="ElementCustom\UITableViewCellCustom.DataBind.cs">
+      <DependentUpon>UITableViewCellCustom.cs</DependentUpon>
+    </Compile>
     <Compile Include="HtmlWebViewController.MT.cs" />
     <Compile Include="IElementSizing.MT.cs" />
     <Compile Include="RootElement.Constructors.MT.cs" />
@@ -225,13 +233,13 @@
     <None Include="ElementCustom\obsolete\UITableViewCellCustomAlternative.designer.cs">
       <DependentUpon>UITableViewCellCustomAlternative.cs</DependentUpon>
     </None>
-    <Compile Include="ElementCustom\ElementDerivedCustom.cs" />
-    <Compile Include="ElementCustom\ElementDerivedCustom.DataBind.cs">
-      <DependentUpon>ElementDerivedCustom.cs</DependentUpon>
+    <Compile Include="ElementCustom\ElementCustomGeneric.cs" />
+    <Compile Include="ElementCustom\ElementCustomGeneric.DataBind.cs">
+      <DependentUpon>ElementCustomGeneric.cs</DependentUpon>
     </Compile>
-    <Compile Include="ElementCustom\UITableViewCellCustom.cs" />
-    <Compile Include="ElementCustom\UITableViewCellCustom.DataBind.cs">
-      <DependentUpon>UITableViewCellCustom.cs</DependentUpon>
+    <Compile Include="ElementCustom\UITableViewCellCustomGeneric.cs" />
+    <Compile Include="ElementCustom\UITableViewCellCustomGeneric.DataBind.cs">
+      <DependentUpon>UITableViewCellCustomGeneric.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -314,8 +322,5 @@
       <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.wp.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="7e454455-83d1-4b65-bc72-ab1f3d79c02d" />
     </VisualStudio>
   </ProjectExtensions>
-  <ItemGroup>
-    <Folder Include="NormalizationExtensions\" />
-    <Folder Include="ElementCustom\obsolete\" />
-  </ItemGroup>
+  <ItemGroup />
 </Project>
