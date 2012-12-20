@@ -12,8 +12,10 @@ namespace MonoMobile.Dialog
 	/// </summary>
 	/// <typeparam name="BusinessObjectType"></typeparam>
 	public abstract partial class UITableViewCellCustomGeneric<BusinessObjectType>
-		:
-		UITableViewCellCustom
+		: 
+			MonoTouch.UIKit.UITableViewCell
+			// UITableViewCellCustom 	// causes errors (not inheriting directly from UITableViewCell)
+										// TODO: [Register]
 	{
 		# region    Constructors
 		//-------------------------------------------------------------------------
