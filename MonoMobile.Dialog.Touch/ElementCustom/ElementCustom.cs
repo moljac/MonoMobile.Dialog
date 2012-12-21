@@ -333,7 +333,7 @@ namespace MonoMobile.Dialog
 		//-------------------------------------------------------------------------
 
 	
-		public override UITableViewCell GetCell(UITableView tv)
+		public override UITableViewCell GetCell (UITableView tv)
 		{
 			// TODO: Implement - see: http://go-mono.com/docs/index.aspx?link=T%3aMonoTouch.Foundation.ModelAttribute
 
@@ -341,9 +341,10 @@ namespace MonoMobile.Dialog
 			// 
 			// <string key="IBUIReuseIdentifier">UITableViewCellCustomGeneric</string>
 			// 
-			NSString memory_identifier = new NSString(CellReuseIdentifier);
-			cell_custom = tv.DequeueReusableCell(memory_identifier) as UITableViewCell;
+			NSString memory_identifier = new NSString (CellReuseIdentifier);
+			cell_custom = tv.DequeueReusableCell (memory_identifier) as UITableViewCell;
 
+			
 			if (null == CellCustom)
 			{
 				if (null != CellContentFactory)
