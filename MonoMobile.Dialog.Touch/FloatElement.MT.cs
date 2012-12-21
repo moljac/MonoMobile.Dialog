@@ -63,9 +63,34 @@ namespace MonoMobile.Dialog
 				return skey;
 			}
 		}
+
+		UIView slider_beautifull;
+
 		public override UITableViewCell GetCell(UITableView tv)
 		{
-			var cell = tv.DequeueReusableCell(CellKey);
+			UITableViewCell tvc = null;
+
+			if (MinValue != 0f && MaxValue != 0.0f)
+			{
+				tvc = UITableViewCellSliderOnlyFactory(tv);
+			}
+			else 
+			{
+				tvc = UITableViewCellSliderWithValueAndMinMaxFactory(tv);
+			}
+
+			return tvc;
+		}
+
+
+	
+		/// <summary>
+		/// Original MonoTouch.Dialog Cell  creation
+		/// </summary>
+		/// <returns></returns>
+		private UITableViewCell UITableViewCellSliderOnlyFactory(UITableView tv)
+		{
+			UITableViewCell cell = tv.DequeueReusableCell(CellKey);
 			if (cell == null)
 			{
 				cell = new UITableViewCell(UITableViewCellStyle.Default, CellKey);
@@ -75,6 +100,8 @@ namespace MonoMobile.Dialog
 				RemoveTag(cell, 1);
 
 			SizeF captionSize = new SizeF(0, 0);
+
+
 			if (Caption != null && ShowCaption)
 			{
 				cell.TextLabel.Text = Caption;
@@ -104,6 +131,7 @@ namespace MonoMobile.Dialog
 			}
 
 			cell.ContentView.AddSubview(slider);
+
 			return cell;
 		}
 

@@ -163,6 +163,7 @@
     <Compile Include="BaseBooleanImageElement.MT.cs" />
     <Compile Include="BooleanElement.MT.cs" />
     <Compile Include="BoolElement.MT.cs" />
+    <Compile Include="FloatElement.MTUITableViewCellCreation.cs" />
     <Compile Include="CustomElement.MT.cs" />
     <Compile Include="Element.ToString.MT.cs" />
     <Compile Include="ElementCustom\ElementCustom.DataBinding.cs">
@@ -319,7 +320,7 @@
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.wp.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="7e454455-83d1-4b65-bc72-ab1f3d79c02d" />
+      <UserProperties ProjectLinkReference="7e454455-83d1-4b65-bc72-ab1f3d79c02d" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.wp.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
     </VisualStudio>
   </ProjectExtensions>
   <ItemGroup />
