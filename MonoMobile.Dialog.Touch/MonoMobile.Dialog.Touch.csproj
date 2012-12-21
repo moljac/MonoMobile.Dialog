@@ -242,6 +242,8 @@
     <Compile Include="ElementCustom\UITableViewCellCustomGeneric.DataBind.cs">
       <DependentUpon>UITableViewCellCustomGeneric.cs</DependentUpon>
     </Compile>
+    <InterfaceDefinition Include="ElementCustom\UITableViewCellCustom.xib" />
+    <InterfaceDefinition Include="ElementCustom\UITableViewCellCustomGeneric.xib" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\arrow.png">

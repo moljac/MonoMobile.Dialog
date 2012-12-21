@@ -11,6 +11,7 @@ namespace MonoMobile.Dialog
 	/// for DataBinding.
 	/// </summary>
 	/// <typeparam name="BusinessObjectType"></typeparam>
+	//[MonoTouch.Foundation.Register]
 	public partial class UITableViewCellCustom
 		: 
 		MonoTouch.UIKit.UITableViewCell

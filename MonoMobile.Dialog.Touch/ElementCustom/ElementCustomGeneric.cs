@@ -32,13 +32,13 @@ namespace MonoMobile.Dialog
 		# region    Constructors
 		//-------------------------------------------------------------------------
 		public ElementCustomGeneric()
-			: base(null)
+			: base()
 		{				
 			return;
 		}
 		//-------------------------------------------------------------------------
 		public ElementCustomGeneric(string filename_xib)
-			: base(null)
+			: base()
 		{
 			this.FileNameXIB = filename_xib;
 			

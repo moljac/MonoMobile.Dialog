@@ -27,10 +27,16 @@ namespace MonoMobile.Dialog
 			return;
 		}
 		//-------------------------------------------------------------------------
+		public ElementCustom (UITableViewCellCustom cell_custom) : base (null)
+		{
+			CellCustom = cell_custom;
+		}
+		//-------------------------------------------------------------------------
 		public ElementCustom(string filename_xib)
 			: base(null)
 		{
 			this.FileNameXIB = filename_xib;
+			this.CellReuseIdentifier = file_name_xib;
 			
 			return;
 		}
@@ -50,6 +56,10 @@ namespace MonoMobile.Dialog
 		/// <summary>
 		/// CellReuseIdentifier
 		/// </summary>
+		/// <code>
+		///			<!-- XIB -->
+		/// 		<string key="IBUIReuseIdentifier">xxxxxx</string>
+		/// </code>
 		public
 				string
 				CellReuseIdentifier
