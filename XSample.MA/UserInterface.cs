@@ -169,7 +169,7 @@ namespace MonoMobile.XSample
 					// and 
 					// 'MonoMobile.Dialog.Section.Add(IEnumerable<MonoMobile.Dialog.Element>)'
 					// XSample.MonoTouch
-					, new RootElement("Zagreb details re1")
+					, (Element) new RootElement("Zagreb details re1")
 						{
 					 		new Section ("Zagreb section") 
 					 		{
@@ -177,7 +177,7 @@ namespace MonoMobile.XSample
 					  		, new DateElement ("Date", DateTime.Now)
 					 		, new StringElement ("String", "Value")
 					  		, new TimeElement("Time", DateTime.Now)
-							, new RootElement("Zagreb details details re2")
+							, (Element) new RootElement("Zagreb details details re2")
 								{
 									new Section ("Zagreb section") 
 					 				{

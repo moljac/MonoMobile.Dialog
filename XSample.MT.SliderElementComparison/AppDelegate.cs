@@ -5,10 +5,7 @@ using System.Linq;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-
-using MonoTouch.Dialog;
-
-namespace XSample.MT.MTDMiguels.VisualStudioCompileError
+namespace XSample.MT.SliderElementComparison
 {
 	// The UIApplicationDelegate for the application. This class is responsible for launching the 
 	// User Interface of the application, as well as listening (and optionally responding) to 
@@ -18,8 +15,7 @@ namespace XSample.MT.MTDMiguels.VisualStudioCompileError
 	{
 		// class-level declarations
 		UIWindow window;
-		UINavigationController navigation;
-		
+
 		//
 		// This method is invoked when the application has loaded and is ready to run. In this 
 		// method you should instantiate the window, load the UI into it and then make the window
@@ -34,35 +30,11 @@ namespace XSample.MT.MTDMiguels.VisualStudioCompileError
 			
 			// If you have defined a view, add it here:
 			// window.AddSubview (navigationController.View);
-
 			
-			var menu = new RootElement ("Visual Studio Compile Error")
-				{
-					new Section ("Section")
-					{
-						// IN Visual Studio compile time error:
-						// Error	1	
-						// The call is ambiguous between the following methods or properties: 
-						// 'MonoTouch.Dialog.Section.Add(System.Collections.Generic.IEnumerable<MonoTouch.Dialog.Element>)' 
-						// and 
-						// 'MonoTouch.Dialog.Section.Add(MonoTouch.Dialog.Element)'	
-						(Element) new RootElement ("RootElement nested")
-					}
-				};
-					
-			var dv = new DialogViewController (menu) {
-				Autorotate = true
-			};
-			navigation = new UINavigationController ();
-			navigation.PushViewController (dv, true);				
+			window.RootViewController = new MainDialogViewController();
 			
-			// On iOS5 we use the new window.RootViewController, on older versions, we add the subview
-			window = new UIWindow (UIScreen.MainScreen.Bounds);
+			// make the window visible
 			window.MakeKeyAndVisible ();
-			if (UIDevice.CurrentDevice.CheckSystemVersion (5, 0))
-				window.RootViewController = navigation;	
-			else
-				window.AddSubview (navigation.View);
 			
 			return true;
 		}

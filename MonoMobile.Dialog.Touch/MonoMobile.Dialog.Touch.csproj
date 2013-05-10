@@ -217,23 +217,6 @@
     <Compile Include="Elements\Json.cs" />
     <Compile Include="NormalizationExtensions\CheckBoxElement.MA.cs" />
     <Compile Include="NormalizationExtensions\FloatElement.MA.cs" />
-    <Compile Include="ElementCustom\obsolete\UITableViewCellCustom.designer.cs">
-      <DependentUpon>UITableViewCellCustom.cs</DependentUpon>
-    </Compile>
-    <InterfaceDefinition Include="ElementCustom\obsolete\UITableViewCellCustomAlternative.xib">
-      <DependentUpon>UITableViewCellCustomAlternative.cs</DependentUpon>
-    </InterfaceDefinition>
-    <None Include="ElementCustom\obsolete\ElementCustomDerived.cs" />
-    <None Include="ElementCustom\obsolete\ElementCustomDerivedGeneric.cs" />
-    <None Include="ElementCustom\obsolete\UITableViewCellCustom.cs" />
-    <None Include="ElementCustom\obsolete\UITableViewCellCustomAlternative.cs" />
-    <None Include="ElementCustom\obsolete\UITableViewCellCustomListXIBless.cs" />
-    <None Include="ElementCustom\obsolete\UITableViewCellCustom.xib">
-      <DependentUpon>UITableViewCellCustom.cs</DependentUpon>
-    </None>
-    <None Include="ElementCustom\obsolete\UITableViewCellCustomAlternative.designer.cs">
-      <DependentUpon>UITableViewCellCustomAlternative.cs</DependentUpon>
-    </None>
     <Compile Include="ElementCustom\ElementCustomGeneric.cs" />
     <Compile Include="ElementCustom\ElementCustomGeneric.DataBind.cs">
       <DependentUpon>ElementCustomGeneric.cs</DependentUpon>
@@ -242,8 +225,8 @@
     <Compile Include="ElementCustom\UITableViewCellCustomGeneric.DataBind.cs">
       <DependentUpon>UITableViewCellCustomGeneric.cs</DependentUpon>
     </Compile>
-    <InterfaceDefinition Include="ElementCustom\UITableViewCellCustom.xib" />
-    <InterfaceDefinition Include="ElementCustom\UITableViewCellCustomGeneric.xib" />
+    <None Include="ElementCustom\UITableViewCellCustomGeneric.xib.txt" />
+    <None Include="ElementCustom\UITableViewCellCustom.xib.txt" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\arrow.png">
@@ -325,5 +308,7 @@
       <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.wp.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
     </VisualStudio>
   </ProjectExtensions>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ElementCustom\obsolete\" />
+  </ItemGroup>
 </Project>

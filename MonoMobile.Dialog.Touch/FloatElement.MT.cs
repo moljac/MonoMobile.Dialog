@@ -29,12 +29,14 @@ namespace MonoMobile.Dialog
 	/// <summary>
 	///  Used to display a slider on the screen.
 	/// </summary>
-	public partial class FloatElement : Element
+	public partial class FloatElement 
+		: 
+		  Element
+		, IElementSizing  	// needed to enable resizing
 	{
 		static NSString skey = new NSString("FloatElement");
 		UIImage Left, Right;
 		UISlider slider;
-
 
 		# region    Constructors
 		//-------------------------------------------------------------------------
@@ -55,7 +57,6 @@ namespace MonoMobile.Dialog
 		//-------------------------------------------------------------------------
 		# endregion Constructors
 
-
 		protected override NSString CellKey
 		{
 			get
@@ -65,12 +66,13 @@ namespace MonoMobile.Dialog
 		}
 
 		UIView slider_beautifull;
-
+		float height = 0.0f;
+		
 		public override UITableViewCell GetCell(UITableView tv)
 		{
 			UITableViewCell tvc = null;
-
-			if (MinValue != 0f && MaxValue != 0.0f)
+	
+			if (MinValue == 0f && MaxValue == 0.0f)
 			{
 				tvc = UITableViewCellSliderOnlyFactory(tv);
 			}
@@ -78,11 +80,16 @@ namespace MonoMobile.Dialog
 			{
 				tvc = UITableViewCellSliderWithValueAndMinMaxFactory(tv);
 			}
-
+			
+			height = tvc.Bounds.Height;
+			
 			return tvc;
 		}
 
-
+		public virtual float GetHeight (UITableView tableView, NSIndexPath indexPath)
+		{
+			return height;	
+		}
 	
 		/// <summary>
 		/// Original MonoTouch.Dialog Cell  creation
