@@ -24,21 +24,21 @@ namespace Sample
 			return new RootElement("Settings") {
 				new Section (){
 					new BooleanElement ("Airplane Mode", false),
-					new RootElement ("Notifications", 0, 0) {
+					(Element) new RootElement ("Notifications", 0, 0) {
 						new Section (null, "Turn off Notifications to disable Sounds\n" +
 							     "Alerts and Home Screen Badges for the\napplications below."){
 							new BooleanElement ("Notifications", false)
 						}
 					}},
 				new Section (){
-					CreateSoundSection (),
-					new RootElement ("Brightness"){
+					(Element) CreateSoundSection (),
+					(Element) new RootElement ("Brightness"){
 						new Section (){
 							new FloatElement (null, null, 0.5f),
 							new BooleanElement ("Auto-brightness", false),
 						}
 					},
-					new RootElement ("Wallpaper"){
+					(Element) new RootElement ("Wallpaper"){
 						new Section (){
 							new ImageElement (null),
 							new ImageElement (null),
@@ -53,7 +53,7 @@ namespace Sample
 					new TimeElement ("Select Time", DateTime.Now),
 				},
 				new Section () {
-					CreateGeneralSection (),		
+					(Element) CreateGeneralSection (),		
 					//new RootElement ("Mail, Contacts, Calendars"),
 					//new RootElement ("Phone"),
 					//new RootElement ("Safari"),
@@ -78,7 +78,7 @@ namespace Sample
 				new Section ("Ring") {
 					new BooleanElement ("Vibrate", true),
 					new FloatElement (null, null, 0.8f),
-					new RootElement ("Ringtone", new RadioGroup (0)){
+					(Element) new RootElement ("Ringtone", new RadioGroup (0)){
 						new Section ("Custom"){
 							new RadioElement ("Circus Music"),
 							new RadioElement ("True Blood"),
@@ -88,7 +88,7 @@ namespace Sample
 								select (Element) new RadioElement (n)
 						}
 					},
-					new RootElement ("New Text Message", new RadioGroup (3)){
+					(Element) new RootElement ("New Text Message", new RadioGroup (3)){
 						new Section (){
 							from n in "None,Tri-tone,Chime,Glass,Horn,Bell,Eletronic".Split (',')
 								select (Element) new RadioElement (n)
@@ -108,9 +108,9 @@ namespace Sample
 		{
 			return new RootElement("General") {
 				new Section (){
-					new RootElement ("About"){
+					(Element) new RootElement ("About"){
 						new Section ("My Phone") {
-							new RootElement ("Network", new RadioGroup (null, 0)) {
+							(Element) new RootElement ("Network", new RadioGroup (null, 0)) {
 								new Section (){
 									new RadioElement ("My First Network"),
 									new RadioElement ("Second Network"),
@@ -133,7 +133,7 @@ namespace Sample
 							new HtmlElement ("Monologue", "http://www.go-mono.com/monologue"),
 						}
 					},
-					new RootElement ("Usage"){
+					(Element) new RootElement ("Usage"){
 						new Section ("Time since last full charge"){
 							new StringElement ("Usage", "0 minutes"),
 							new StringElement ("Standby", "0 minutes"),
@@ -154,7 +154,7 @@ namespace Sample
 					}
 				},
 				new Section (){
-					new RootElement ("Network"){
+					(Element) new RootElement ("Network"){
 						new Section (null, "Using 3G loads data faster\nand burns the battery"){
 							new BooleanElement ("Enable 3G", true)
 						},
@@ -162,7 +162,7 @@ namespace Sample
 							new BooleanElement ("Data Roaming", false),
 						},
 						new Section (){
-							new RootElement ("VPN", 0, 0){
+							(Element) new RootElement ("VPN", 0, 0){
 								new Section (){
 									new BooleanElement ("VPN", false),
 								},
@@ -172,7 +172,7 @@ namespace Sample
 							}
 						}
 					},
-					new RootElement ("Bluetooth", 0, 0){
+					(Element) new RootElement ("Bluetooth", 0, 0){
 						new Section (){
 							new BooleanElement ("Bluetooth", false)
 						}
@@ -180,7 +180,7 @@ namespace Sample
 					new BooleanElement ("Location Services", true),
 				},
 				new Section (){
-					new RootElement ("Auto-Lock", new RadioGroup (0)){
+					(Element) new RootElement ("Auto-Lock", new RadioGroup (0)){
 						new Section (){
 							new RadioElement ("1 Minute"),
 							new RadioElement ("2 Minutes"),
@@ -195,7 +195,7 @@ namespace Sample
 					new BooleanElement ("Restrictions", false),
 				},
 				new Section () {
-					new RootElement ("Home", new RadioGroup (2)){
+					(Element) new RootElement ("Home", new RadioGroup (2)){
 						new Section ("Double-click the Home Button for:"){
 							new RadioElement ("Home"),
 							new RadioElement ("Search"),
@@ -209,7 +209,7 @@ namespace Sample
 						// Missing feature: sortable list of data
 						// SearchResults
 					},
-					new RootElement ("Date & Time"){
+					(Element) new RootElement ("Date & Time"){
 						new Section (){
 							new BooleanElement ("24-Hour Time", false),
 						},
@@ -219,7 +219,7 @@ namespace Sample
 							// SetTime: Can be imeplemeneted with String + Tapped Event
 						}
 					},
-					new RootElement ("Keyboard"){
+					(Element) new RootElement ("Keyboard"){
 						new Section (null, "Double tapping the space bar will\n" +
 							"insert a period followed by a space"){
 							new BooleanElement ("Auto-Correction", true),
@@ -228,7 +228,7 @@ namespace Sample
 							new BooleanElement ("\".\" Shortcut", true),
 						},
 						new Section (){
-							new RootElement ("International Keyboards", new Group ("kbd")){
+							(Element) new RootElement ("International Keyboards", new Group ("kbd")){
 								new Section ("Using Checkboxes"){
 									new CheckboxElement ("English", true, "kbd"),
 									new CheckboxElement ("Spanish", false, "kbd"),

@@ -393,5 +393,40 @@ namespace MonoMobile.Dialog
 			dialog.Dismiss();
 		}
 
+
+//		public void Reload(Section section, UITableViewRowAnimation animation)
+//		{
+//			if (section == null)
+//				throw new ArgumentNullException("section");
+//			if (section.Parent == null || section.Parent != this)
+//				throw new ArgumentException("Section is not attached to this root");
+//
+//			int idx = 0;
+//			foreach (var sect in Sections)
+//			{
+//				if (sect == section)
+//				{
+//					TableView.ReloadSections(new NSIndexSet((uint)idx), animation);
+//					return;
+//				}
+//				idx++;
+//			}
+//		}
+//
+//		public void Reload(Element element, UITableViewRowAnimation animation)
+//		{
+//			if (element == null)
+//				throw new ArgumentNullException("element");
+//			var section = element.Parent as Section;
+//			if (section == null)
+//				throw new ArgumentException("Element is not attached to this root");
+//			var root = section.Parent as RootElement;
+//			if (root == null)
+//				throw new ArgumentException("Element is not attached to this root");
+//			var path = element.IndexPath;
+//			if (path == null)
+//				return;
+//			TableView.ReloadRows(new NSIndexPath[] { path }, animation);
+//		}
 	}
 }

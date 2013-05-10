@@ -24,21 +24,21 @@ namespace Sample
 			return new RootElement("Settings") {
 				new Section (){
 					new BooleanElement ("Airplane Mode", false),
-					new RootElement ("Notifications", 0, 0) {
+					(Element) new RootElement ("Notifications", 0, 0) {
 						new Section (null, "Turn off Notifications to disable Sounds\n" +
 							     "Alerts and Home Screen Badges for the\napplications below."){
 							new BooleanElement ("Notifications", false)
 						}
 					}},
 				new Section (){
-					CreateSoundSectionHolisticWare (),
-					new RootElement ("Brightness"){
+					(Element) CreateSoundSectionHolisticWare (),
+					(Element) new RootElement ("Brightness"){
 						new Section (){
 							new FloatElement (null, null, 0.5f),
 							new BooleanElement ("Auto-brightness", false),
 						}
 					},
-					new RootElement ("Wallpaper"){
+					(Element) new RootElement ("Wallpaper"){
 						new Section (){
 							new ImageElement (null),
 							new ImageElement (null),
@@ -53,7 +53,7 @@ namespace Sample
 					new TimeElement ("Select Time", DateTime.Now),
 				},
 				new Section () {
-					CreateGeneralSectionHolisticWare (),		
+					(Element) CreateGeneralSectionHolisticWare (),		
 					//new RootElement ("Mail, Contacts, Calendars"),
 					//new RootElement ("Phone"),
 					//new RootElement ("Safari"),

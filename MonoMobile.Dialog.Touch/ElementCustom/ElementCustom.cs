@@ -9,6 +9,10 @@ using MonoTouch.Foundation;
 
 namespace MonoMobile.Dialog
 {
+	/// <summary>
+	/// 
+	/// </summary>
+	/// <see cref="http://www.idev101.com/code/User_Interface/UITableView/"/>
 	public partial class ElementCustom
 		:
 		// MonoTouch.Dialog.Element

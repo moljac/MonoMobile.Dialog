@@ -11,6 +11,7 @@ namespace MonoMobile.Dialog
 	/// for DataBinding.
 	/// </summary>
 	/// <typeparam name="BusinessObjectType"></typeparam>
+	/// <see cref="	/// <see cref="http://www.idev101.com/code/User_Interface/UITableView/"/>
 	//[MonoTouch.Foundation.Register]
 	public partial class UITableViewCellCustom
 		: 

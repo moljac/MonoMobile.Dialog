@@ -238,7 +238,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="AchievementElement.MA.cs" />
-    <None Include="MonoMobile.Dialog.Android.ncrunchproject" />
   </ItemGroup>
   <ItemGroup>
     <CodeAnalysisDictionary Include="Resources\Layout\dialog_textfieldright.xml" />
@@ -301,7 +300,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkReference="7e454455-83d1-4b65-bc72-ab1f3d79c02d" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.wp.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;\.WP.cs;\.wp.cs;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
