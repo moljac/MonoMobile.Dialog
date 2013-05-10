@@ -56,15 +56,10 @@ namespace MonoMobile.Dialog
 			if (MinValue != null)
 			{
 				labelMinValue = new UILabel();
+				labelMinValue.Text = this.MinValue.ToString();
+				cell.ContentView.AddSubview(labelMinValue);				
 			}
-			if (MaxValue != null)
-			{
-				labelMaxValue = new UILabel();
-			}
-			if (Value != null)
-			{
-				labelValue = new UILabel();
-			}
+			
 
 			if (slider == null)
 			{
@@ -81,14 +76,29 @@ namespace MonoMobile.Dialog
 				{
 					Value = slider.Value;
 				};
+				
+				//cell.ContentView.AddSubview(slider);
 			}
 			else
 			{
 				slider.Value = Value;
 			}
 
-			cell.ContentView.AddSubview(slider);
-
+			if (MaxValue != null)
+			{
+				labelMaxValue = new UILabel();
+				labelMaxValue.Text = this.MaxValue.ToString();
+				cell.ContentView.AddSubview(labelMaxValue);
+			}
+			
+			if (Value != null)
+			{
+				RectangleF rf = new RectangleF(200,0,20,20);
+				labelValue = new UILabel(rf);
+				labelValue.Text = this.Value.ToString();
+				cell.ContentView.AddSubview(labelValue);
+			}
+			
 			return cell;
 		}
 

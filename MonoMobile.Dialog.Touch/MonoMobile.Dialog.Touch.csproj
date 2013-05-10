@@ -223,16 +223,8 @@
     <InterfaceDefinition Include="ElementCustom\obsolete\UITableViewCellCustomAlternative.xib">
       <DependentUpon>UITableViewCellCustomAlternative.cs</DependentUpon>
     </InterfaceDefinition>
-    <None Include="ElementCustom\obsolete\ElementCustomDerived.cs" />
-    <None Include="ElementCustom\obsolete\ElementCustomDerivedGeneric.cs" />
-    <None Include="ElementCustom\obsolete\UITableViewCellCustom.cs" />
-    <None Include="ElementCustom\obsolete\UITableViewCellCustomAlternative.cs" />
-    <None Include="ElementCustom\obsolete\UITableViewCellCustomListXIBless.cs" />
     <None Include="ElementCustom\obsolete\UITableViewCellCustom.xib">
       <DependentUpon>UITableViewCellCustom.cs</DependentUpon>
-    </None>
-    <None Include="ElementCustom\obsolete\UITableViewCellCustomAlternative.designer.cs">
-      <DependentUpon>UITableViewCellCustomAlternative.cs</DependentUpon>
     </None>
     <Compile Include="ElementCustom\ElementCustomGeneric.cs" />
     <Compile Include="ElementCustom\ElementCustomGeneric.DataBind.cs">
@@ -242,8 +234,16 @@
     <Compile Include="ElementCustom\UITableViewCellCustomGeneric.DataBind.cs">
       <DependentUpon>UITableViewCellCustomGeneric.cs</DependentUpon>
     </Compile>
-    <InterfaceDefinition Include="ElementCustom\UITableViewCellCustom.xib" />
-    <InterfaceDefinition Include="ElementCustom\UITableViewCellCustomGeneric.xib" />
+    <None Include="ElementCustom\UITableViewCellCustomGeneric.xib.txt" />
+    <None Include="ElementCustom\UITableViewCellCustom.xib.txt" />
+    <Compile Include="ElementCustom\obsolete\ElementCustomDerived.cs" />
+    <Compile Include="ElementCustom\obsolete\ElementCustomDerivedGeneric.cs" />
+    <Compile Include="ElementCustom\obsolete\UITableViewCellCustom.cs" />
+    <Compile Include="ElementCustom\obsolete\UITableViewCellCustomAlternative.cs" />
+    <Compile Include="ElementCustom\obsolete\UITableViewCellCustomListXIBless.cs" />
+    <Compile Include="ElementCustom\obsolete\UITableViewCellCustomAlternative.designer.cs">
+      <DependentUpon>UITableViewCellCustomAlternative.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Images\arrow.png">
